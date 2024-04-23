@@ -5,6 +5,7 @@ export default function CardImg(){
         <>
            <div className="Card cardBox">
                 <img src={ChaveiroCard} alt="" className="img-fluid"/>
+                <span></span>
            </div>
 
         </>
