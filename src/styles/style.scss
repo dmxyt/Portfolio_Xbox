@@ -1,6 +1,28 @@
 // Vars:
 $bg-dark: #555454;
 
+//all website:
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.defaultpadding{
+    padding-top: 45vh;
+}
+
+.mainWallpaper{
+    min-height: 60vh;
+    max-width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center;
+    background-image: url('../../public/programmingWallpaper.jpg');
+}
+
+
 // Box:
 .box{
     // padding: 3rem;
@@ -12,3 +34,4 @@ $bg-dark: #555454;
 .width-config{
     width: 3vh;
 }
+

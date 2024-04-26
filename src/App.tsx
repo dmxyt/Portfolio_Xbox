@@ -3,8 +3,10 @@ import MainContent from "./components/MainContent/MainContent"
 function App() {
   return (
     <>
-      <Header />
-      <MainContent />
+      <div className="mainWallpaper">
+        <Header />
+        <MainContent />
+      </div>
     </>
   )
 }
