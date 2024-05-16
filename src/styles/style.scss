@@ -1,6 +1,6 @@
 // Vars:
 $bg-dark: #555454;
-
+$white-text: #F8F8FF;
 //all website:
 *{
     box-sizing: border-box;
@@ -8,20 +8,23 @@ $bg-dark: #555454;
     margin: 0;
 }
 
+
 .defaultpadding{
-    padding-top: 45vh;
+    padding-top: 30vh;
 }
 
 .mainWallpaper{
-    min-height: 60vh;
+    min-height: 100vh;
     max-width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-
     background-position: center;
     background-image: url('../../public/programmingWallpaper.jpg');
 }
 
+.white-text{
+    color: $white-text;
+}
 
 // Box:
 .box{
@@ -35,3 +38,12 @@ $bg-dark: #555454;
     width: 3vh;
 }
 
+.cardBox{
+    transition: 0.3s;
+    padding: 0.1vh;
+    border: 0.3vh solid transparent;
+    &:hover{
+        box-shadow: 0 0 4vh green;
+        border: 0.3vh solid green;
+    }
+}
