@@ -12,9 +12,9 @@ export default function MainContent() {
             <section className="mainSection defaultpadding px-5">
                 <Container className="d-flex flex-column gap-4" fluid>
                     <section className="d-flex flex-row gap-4">
-                        <div className="d-flex row rounded "
+                        <div className="d-flex "
                             style={{ "width": "30vh" }}>
-                            <img src={CardExample} className='cardBox rounded img-fluid d-flex' />
+                            <img src={CardExample} className='rounded img-fluid d-flex cardBox' />
                         </div>
                         <Row className="align-items-end">
                             {projects.map(project => (

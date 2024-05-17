@@ -7,7 +7,8 @@ type tabButtonType = {
 const tabBtn = ({href, item_name} : tabButtonType) => {
     return(
         <>
-            <a href={href} className="btn btn-primary-outline d-flex">
+            <a href={href} className="tabSelector d-flex text-light"
+            data-toggle="tooltip" data-placement="bottom" title={href}>
                 <i className={`bi bi-${item_name}`}></i>
             </a> 
         </>
