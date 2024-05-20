@@ -18,17 +18,17 @@ export default function MainContent() {
                         </div>
                         <Row className="align-items-end">
                             {projects.map(project => (
-                                <CardImg id={project.id}
+                                <CardImg id={project.id} href={project.href}
                                     description={project.description} img_src={project.img_src}
                                     title={project.title} key={project.id} />
                             ))}
                         </Row>
                     </section>
                     <Row className="flex-row gap-4 px-2 ">
-                        <Box />
-                        <Box />
-                        <Box />
-                        <Box />
+                        <Box icon={'collection-fill'} description={'Meus projetos'} />
+                        <Box icon={'mortarboard-fill'} description={"Histórico Acadêmico"} />
+                        <Box icon={"linkedin"} description={"Meu LinkedIn"} />
+                        <Box icon={"file-earmark-richtext-fill"} description={'Meu Currículo'} />
                     </Row>
                 </Container>
             </section>

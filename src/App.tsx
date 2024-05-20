@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header"
 import MainContent from "./components/MainContent/MainContent"
-import videoWallpaper from '../public/WallpaperXbox.mp4';
+// import videoWallpaper from '../public/WallpaperXbox.mp4';
 function App() {
   return (
     <>
@@ -15,4 +15,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
