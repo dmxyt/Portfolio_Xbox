@@ -14,7 +14,7 @@ $green: #0E7A0D;
     padding-top: 30vh;
 }
 
-.mainWallpaper{
+.mainpageWallpaper{
     min-height: 100vh;
     max-width: auto;
     background-image: url('../../public/wallpaper.jpg');
@@ -59,4 +59,14 @@ $green: #0E7A0D;
         box-shadow: 0 0 4vh $green;
         border: 0.3vh solid $green;
     }
+}
+
+//My projects page:
+.wallpaperMyProjects{
+    min-height: 100vh;
+    // width: 100%;
+}
+
+.gap-50{
+    gap: 10vh;
 }

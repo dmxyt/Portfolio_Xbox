@@ -3,7 +3,7 @@ import MainContent from "../../components/MainContent/MainContent";
 function HomePage() {
   return (
     <>
-      <div className="mainWallpaper">
+      <div className="mainpageWallpaper">
         <Header />
         <MainContent />
       </div>

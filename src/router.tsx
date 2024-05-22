@@ -4,7 +4,7 @@ import MyProjectsPage from './pages/myProjects/myProjects'
 
 const routes = createBrowserRouter([
     {
-        path: '/',
+        path: '/homepage',
         element: <HomePage />,
     },
     {

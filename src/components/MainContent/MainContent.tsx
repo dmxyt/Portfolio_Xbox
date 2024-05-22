@@ -25,10 +25,10 @@ export default function MainContent() {
                         </Row>
                     </section>
                     <Row className="flex-row gap-4 px-2 ">
-                        <Box icon={'collection-fill'} description={'Meus projetos'} />
-                        <Box icon={'mortarboard-fill'} description={"Histórico Acadêmico"} />
-                        <Box icon={"linkedin"} description={"Meu LinkedIn"}  />
-                        <Box icon={"file-earmark-richtext-fill"} description={'Meu Currículo'} />
+                        <Box icon={'collection-fill'} description={'Meus projetos'} href="myProjects" target={false} />
+                        <Box icon={'mortarboard-fill'} description={"Histórico Acadêmico"} href="" target={true} />
+                        <Box icon={"linkedin"} description={"Meu LinkedIn"} href="" target={true} />
+                        <Box icon={"file-earmark-richtext-fill"} description={'Meu Currículo'} href="" target={true} />
                     </Row>
                 </Container>
             </section>
