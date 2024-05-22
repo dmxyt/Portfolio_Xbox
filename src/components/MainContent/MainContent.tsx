@@ -27,7 +27,7 @@ export default function MainContent() {
                     <Row className="flex-row gap-4 px-2 ">
                         <Box icon={'collection-fill'} description={'Meus projetos'} />
                         <Box icon={'mortarboard-fill'} description={"Histórico Acadêmico"} />
-                        <Box icon={"linkedin"} description={"Meu LinkedIn"} />
+                        <Box icon={"linkedin"} description={"Meu LinkedIn"}  />
                         <Box icon={"file-earmark-richtext-fill"} description={'Meu Currículo'} />
                     </Row>
                 </Container>
