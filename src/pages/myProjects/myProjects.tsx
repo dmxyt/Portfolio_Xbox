@@ -1,6 +1,7 @@
 import { projects } from "../../database/projects";
 import CardImg from "../../components/MainContent/components/CardImg";
 import { Row } from "reactstrap";
+import Contacts from "../../components/contactsOffCanva/Contacts";
 function MyProjectsPage() {
     return (
         <>
@@ -37,7 +38,7 @@ function MyProjectsPage() {
                             </li>
                         </ul>
                         <section className="diskuse">
-
+                            <Contacts />
                         </section>
                     </aside>
                     <main className="w-75 pt-5 px-5 d-flex flex-column gap-3">
@@ -47,7 +48,7 @@ function MyProjectsPage() {
                             {projects.map(project => (
                                 <CardImg id={project.id} href={project.href}
                                     description={project.description} img_src={project.img_src}
-                                    title={project.title} key={project.id} />
+                                    title={project.title} key={project.id}  />
                             ))}
                         </Row>
                     </main>
