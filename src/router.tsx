@@ -2,7 +2,7 @@ import {createBrowserRouter }from 'react-router-dom'
 import HomePage from './pages/homepage/HomePage'
 import MyProjectsPage from './pages/myProjects/myProjects'
 import Typescript_projects from './components/myProjectsPage/typescript_projects/Typescript_projects'
-import Contacts from './components/contactsOffCanva/Contacts'
+import Compentences from './pages/competences/Compentences'
 
 const routes = createBrowserRouter([
     {
@@ -14,8 +14,8 @@ const routes = createBrowserRouter([
         element: <HomePage />,
     },
     {
-        // path: 'contacts',
-        // element: <Contacts />,
+        path: 'competences',
+        element: <Compentences />,
     },
     {
         path: 'myProjects',
