@@ -5,68 +5,66 @@ export default function () {
         <>
             <div className="bg-dark text-white wallpaperMyProjects">
                 <Container>
-                    <h1 className="pt-5">Competências</h1>
-                    <div className="container-sm d-flex flex-column 
-                    justify-content-center align-items-center">
-                        <img src={XboxController} alt="Xbox Controller" 
-                        className="img-fluid w-50" />
-                        <Row className="">
-                            <Col>
+                    <div className="text-white pt-5 d-flex gap-3 align-items-center">
+                        <a href="/homepage">
+                            <i className="bi bi-box-arrow-left h3 "></i>
+                        </a>
+                        <h1 className="">Competências</h1>
+                    </div>
+                    <div className=" d-flex flex-column 
+                    justify-content-center align-items-center ">
+                        <img src={XboxController} alt="Xbox Controller"
+                            className="img-fluid w-50" />
+                        <div className="d-flex w-100 gap-3 h6">
+                            <span>
                                 Javascript
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 Python
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 C
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 C++
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
+                            </span>
+                            <span>
                                 React
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 Typescript
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 CSS3
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 HTML5
-                            </Col>
-
-                        </Row>
-                        <Row>
-                            <Col>
+                            </span>
+                            <span>
                                 SASS
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 Next
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 PostgreSQL
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 MongoDB
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
+                            </span>
+                            <span>
                                 Bootstrap
-                            </Col>
-                            <Col>
+                            </span>
+                            <span>
                                 Node.js
-                            </Col>
-                            <Col>
+                            </span>
+                            <span className="text-center">
                                 Azure Fundamentals
-                            </Col>
-                            <Col>
+                            </span>
+                            <span className="text-center">
                                 Inteligência Artificial
-                            </Col>
-                        </Row>
+                            </span>
+                        </div>
                     </div>
                 </Container>
             </div>

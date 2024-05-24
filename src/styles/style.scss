@@ -70,3 +70,13 @@ $green: #0E7A0D;
 .gap-50{
     gap: 10vh;
 }
+
+//CompetencesPage
+.competencePageWallpaper{
+    min-height: 100vh;
+    max-width: auto;
+    background-image: url('../../public/xbox-controller.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
