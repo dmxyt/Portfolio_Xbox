@@ -26,7 +26,7 @@ export default function MainContent() {
                     </section>
                     <Row className="flex-row gap-4 px-2">
                         <Box icon={'collection-fill'} description={'Meus projetos'} href="myProjects" target={false} />
-                        <Box icon={'mortarboard-fill'} description={"Histórico Acadêmico"} href="academicFormation" target={false} />
+                        <Box icon={'person-workspace'} description={"Histórico Profissional"} href="professional_experiences" target={false} />
                         <Box icon={"linkedin"} description={"Meu LinkedIn"} href="" target={true} />
                         <Box icon={"file-earmark-richtext-fill"} description={'Meu Currículo'} href="" target={true} />
                     </Row>

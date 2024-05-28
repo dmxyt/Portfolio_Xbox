@@ -6,8 +6,8 @@ function HomePage() {
     <>
       <div className="mainpageWallpaper">
         <Header />
-        <MainContent />
         <Contacts />
+        <MainContent />
       </div>
     </>
   )

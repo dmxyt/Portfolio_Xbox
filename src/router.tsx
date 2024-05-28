@@ -5,6 +5,7 @@ import Typescript_projects from './components/myProjectsPage/typescript_projects
 import Compentences from './pages/competences/Compentences'
 import PersonalInfo from './pages/personalInfo/PersonalInfo'
 import AcademicFormation from './pages/academicFormation/AcademicFormation'
+import ProfessionalExperiences from './pages/professionalExperiences/professional_experiences'
 
 const routes = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const routes = createBrowserRouter([
     {
         path: 'academicformation',
         element: <AcademicFormation />,
+    },
+    {
+        path: 'professional_experiences',
+        element: <ProfessionalExperiences/>
     },
     {
         path: 'myProjects',

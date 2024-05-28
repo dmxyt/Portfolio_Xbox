@@ -3,8 +3,9 @@ export default function () {
 
     return (
         <>
-            <div className="account d-flex gap-2 w-25"
-                style={{ "width": "auto" }}>
+            <a className="account d-flex gap-2 w-25 text-white link-offset-2 link-underline 
+            link-underline-opacity-0 " 
+            href="personalInformation" style={{ "width": "auto" }}>
                 <div className='h1'>
                     <i className="bi bi-person-circle"></i>
                 </div>
@@ -18,7 +19,7 @@ export default function () {
                         5000
                     </span>
                 </div>
-            </div>
+            </a>
         </>
     )
 }
