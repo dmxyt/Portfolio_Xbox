@@ -6,7 +6,7 @@ export default function () {
             <div className="bg-dark text-white wallpaperMyProjects">
                 <Container>
                     <div className="text-white pt-5 d-flex gap-3 align-items-center">
-                        <a href="/homepage">
+                        <a href="/">
                             <i className="bi bi-box-arrow-left h3 "></i>
                         </a>
                         <h1 className="">Competências</h1>

@@ -13,10 +13,6 @@ const routes = createBrowserRouter([
         element: <HomePage />,
     },
     {
-        path: 'homepage',
-        element: <HomePage />,
-    },
-    {
         path: 'competences',
         element: <Compentences />,
     },

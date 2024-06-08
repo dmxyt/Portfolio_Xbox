@@ -1,7 +1,6 @@
 import { projects } from "../../database/projects";
 import CardImg from "../../components/MainContent/components/CardImg";
 import { Row } from "reactstrap";
-import Contacts from "../../components/contactsOffCanva/Contacts";
 function MyProjectsPage() {
     return (
         <>
@@ -10,7 +9,7 @@ function MyProjectsPage() {
                     <aside className="w-25 p-5 bg-black h-100 d-flex flex-column gap-5 wallpaperMyProjects">
                         <div className="profile-area d-flex flex-column w-100 gap-2">
                             <div className="text-white">
-                                <a href="/homepage">
+                                <a href="/">
                                     <i className="bi bi-box-arrow-left h5 justify-self-left text-center"></i>
                                 </a>
                             </div>
@@ -38,7 +37,7 @@ function MyProjectsPage() {
                             </li>
                         </ul>
                         <section className="diskuse">
-                            <Contacts />
+                            {/* <Contacts /> */}
                         </section>
                     </aside>
                     <main className="w-75 pt-5 px-5 d-flex flex-column gap-3">

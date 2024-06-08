@@ -1,39 +1,35 @@
-import { Offcanvas, OffcanvasBody, Button, OffcanvasHeader } from "reactstrap"
+import { Offcanvas, OffcanvasBody } from "reactstrap";
 import { useState } from "react";
 
-
 export default function Contact() {
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const [isOpen, setIsOpen] = useState(false);
+    const handleClose = () => setIsOpen(false);
+    const handleShow = () => setIsOpen(true);
+
     return (
         <>
-            <a className="btn btn-primary d-lg-none" onClick={handleShow}>
-                Launch
-            </a>
-            <aside className="aside" >
-                <Offcanvas
-                    show={show} onHide={handleClose}
-                    tabIndex={-1}
-                    id="contacts"
-                    aria-labelledby="offcanvasExampleLabel"
-                >
-                    <OffcanvasHeader closeButton>
-                        <h5 className="offcanvas-title" id="offcanvasExampleLabel">
-                            oiee
-                        </h5>
-                        <button
-                            type="button"
-                            className="btn-close text-reset"
-                            data-bs-dismiss="offcanvas"
-                            aria-label="Close"
-                        ></button>
-                    </OffcanvasHeader>
-                    <OffcanvasBody>
-                        <h1>oie</h1>
-                    </OffcanvasBody>
-                </Offcanvas>
-            </aside>
+            <button onClick={handleShow} className="tabSelector d-flex text-light"
+                data-toggle="tooltip" data-placement="bottom">
+                <i className={`bi bi-telephone-fill`}></i>
+            </button>
+            <Offcanvas isOpen={isOpen} toggle={handleClose} className="offCanvas bg-black text-light">
+                {/* <OffcanvasHeader toggle={handleClose} > */}
+                {/* toggle={handleClose} */}
+                <header className="d-flex justify-content-between w-100 px-4 pt-3 h4">
+                    <i className="bi bi-xbox"></i>
+                    <i className="bi bi-people-fill"></i>
+                    <i className="bi bi-chat-left-fill"></i>
+                    <i className="bi bi-controller"></i>
+                    <i className="bi bi-upload"></i>
+                    <i className="bi bi-person-circle"></i>
+                </header>
+                {/* </OffcanvasHeader> */}
+                <OffcanvasBody className="px-4 pt-4">
+                        <h3>Contatos:</h3>
+                        
+                </OffcanvasBody>
+            </Offcanvas>
         </>
-    )
+    );
 }
+
