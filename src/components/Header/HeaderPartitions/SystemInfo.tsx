@@ -1,6 +1,6 @@
+import TimeUpdated from "../../MainContent/components/Time"
 
 export default function () {
-
     return (
         <>
 
@@ -9,7 +9,7 @@ export default function () {
                 style={{ "width": "auto" }}>
                 <i className="bi bi-mic-mute-fill"></i>
                 <i className="bi bi-battery-half"></i>
-                {"10:32"}
+                <TimeUpdated />
             </div>
         </>
     )

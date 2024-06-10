@@ -16,7 +16,7 @@ const CollapseSection: FunctionComponent<sectionCollapseInfo> = (props) => {
             <div className="location">
                 <section className="w-100 d-flex 
                         justify-content-between align-items-center
-                        bg-secondary p-4 rounded">
+                        border p-4">
                     <h6>
                         {props.titleElement}
                     </h6>

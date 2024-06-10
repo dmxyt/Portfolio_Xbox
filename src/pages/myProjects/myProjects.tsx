@@ -42,12 +42,18 @@ function MyProjectsPage() {
                     </aside>
                     <main className="w-75 pt-5 px-5 d-flex flex-column gap-3">
                         <h1>All Projects</h1>
-                        <input type="text" className="input w-25" />
+                        <section className="filter d-flex gap-2 align-content-center">
+                            <span className="d-flex gap-1 p-1">
+                                <i className="bi bi-funnel-fill"></i>
+                                Filtro:
+                            </span>
+                            <b className="border p-1 rounded">Relevância</b>
+                        </section>
                         <Row className="align-items-end">
                             {projects.map(project => (
                                 <CardImg id={project.id} href={project.href}
                                     description={project.description} img_src={project.img_src}
-                                    title={project.title} key={project.id}  />
+                                    title={project.title} key={project.id} />
                             ))}
                         </Row>
                     </main>
