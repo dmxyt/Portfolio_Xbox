@@ -14,7 +14,7 @@ export default function () {
         <>
             <header className="bg-primary bg-gradient 
                 text-white pt-2 ">
-                <Container className="d-flex gap-3 align-items-center">
+                <Container fluid className="d-flex gap-3 align-items-center">
                     <a href="/">
                         <i className="bi bi-box-arrow-left h3 "></i>
                     </a>
@@ -23,65 +23,71 @@ export default function () {
             </header>
             <main className="bg-primary bg-gradient pb-5 
             text-white d-flex flex-column wallpaperPersonalInfo">
-                <Container fluid className="d-flex justify-content-between">
-                    <Col className="col-6 col-sm-4 d-flex flex-column" id="bio">
-                        <section className="upper-area d-flex gap-4 fs-4">
-                            <span>LackedCarrot</span>
-                            <span className="d-flex gap-2">
-                                <i className="bi bi-coin"></i>
-                                {"28042006"}
-                            </span>
-                        </section>
-                        <section className="title display-1 pb-2">
-                            <b>Arthur Saldanha</b>
-                        </section>
-                        <section className="down-area d-flex gap-2 flex-column">
-                            <div className="status bold">
-                                Disponível para Contato
-                            </div>
-                            <section className="accountstats d-flex gap-5">
-                                <div className="followers d-flex flex-column">
-                                    <b>Seguidores:</b>
-                                    <span className="fs-3">
-                                        {"83"}
-                                    </span>
+                <Container fluid='sm' className="d-flex 
+                justify-content-around align-items-center gap-5 ">
+                    <section className="d-flex w-75" id="bio">
+                        <div className="d-flex  flex-column">
+                            <section className="upper-area d-flex gap-4 fs-4 ">
+                                <span>LackedCarrot</span>
+                                <span className="d-flex gap-2">
+                                    <i className="bi bi-coin"></i>
+                                    {"28042006"}
+                                </span>
+                            </section>
+                            <section className="title display-2 pb-2">
+                                <b>Arthur Saldanha</b>
+                            </section>
+                            <section className="down-area d-flex gap-5 flex-column">
+                                <div className="status bold">
+                                    Disponível para Contato
                                 </div>
-                                <div className="friends d-flex flex-column">
-                                    <b >Amigos:</b>
-                                    <span className="fs-3">
-                                        {"23"}
-                                    </span>
-                                </div>
+                                <section className="accountstats d-flex gap-5">
+                                    <div className="followers d-flex flex-column">
+                                        <b>Seguidores:</b>
+                                        <span className="fs-3">
+                                            {"83"}
+                                        </span>
+                                    </div>
+                                    <div className="friends d-flex flex-column">
+                                        <b >Amigos:</b>
+                                        <span className="fs-3">
+                                            {"23"}
+                                        </span>
+                                    </div>
+                                </section>
+                                <section className="bio">
+                                    <h6 >
+                                        Iniciante na carreira de desenvolvedor,
+                                        tenho experiências de diversos cursos sobre a área de desenvolvimento e programação,
+                                        com destaque em JavaScript e noções gerais em outros linguagens. Realizo alguns
+                                        trabalhos com a plataforma Adobe, focando em edição de vídeo e produção de conteúdo.
+                                    </h6>
+                                </section>
+                                <section className="skills d-flex gap-3">
+                                    <img src={JavascriptLogo} className="img-fluid icon-size"
+                                        alt="Icone de Javascript" />
+                                    <img src={TypescriptLogo} className="img-fluid icon-size"
+                                        alt="Icone de Typescript" />
+                                    <img src={ReactLogo} className="img-fluid icon-size"
+                                        alt="Icone de React" />
+                                    <img src={PythonLogo} className="img-fluid icon-size"
+                                        alt="Icone de Python" />
+                                    <img src={SassLogo} className="img-fluid icon-size"
+                                        alt="Icone de Sass" />
+                                    <img src={BootstrapLogo} className="img-fluid icon-size"
+                                        alt="Icone de Bootstrap" />
+                                </section>
                             </section>
-                            <section className="bio ">
-                                <h6 >
-                                    Iniciante na carreira de desenvolvedor,
-                                    tenho experiências de diversos cursos sobre a área de desenvolvimento e programação,
-                                    com destaque em JavaScript e noções gerais em outros linguagens. Realizo alguns
-                                    trabalhos com a plataforma Adobe, focando em edição de vídeo e produção de conteúdo.
-                                </h6>
-                            </section>
-                            <section className="skills d-flex gap-3 pt-3">
-                                <img src={JavascriptLogo} className="img-fluid icon-size"
-                                    alt="Icone de Javascript" />
-                                <img src={TypescriptLogo} className="img-fluid icon-size"
-                                    alt="Icone de Typescript" />
-                                <img src={ReactLogo} className="img-fluid icon-size"
-                                    alt="Icone de React" />
-                                <img src={PythonLogo} className="img-fluid icon-size"
-                                    alt="Icone de Python" />
-                                <img src={SassLogo} className="img-fluid icon-size"
-                                    alt="Icone de Sass" />
-                                <img src={BootstrapLogo} className="img-fluid icon-size"
-                                    alt="Icone de Bootstrap" />
-                            </section>
-                        </section>
-                    </Col>
-                    <Col className="account w-25 col-6 col-sm-4">
-                        <img src={ProfileImg} alt="Foto de Perfil do Desenvolvedor"
-                            className="img-fluid" />
-                    </Col>
-                    <Col className="d-flex flex-column col-6 col-sm-4">
+                        </div>
+                        <div className="account-img d-flex justify-content-center align-items-center">
+                            <img src={ProfileImg} alt="Foto de Perfil do Desenvolvedor"
+                                className="img-fluid accountImg" />
+                        </div>
+                    </section>
+                    {/* <section className="account col-6 col-sm-4 
+                    d-flex justify-content-left align-items-center">
+                    </section> */}
+                    <section className="d-flex flex-column infoCardBox w-25">
                         <InfoCard titleElement="Nome Completo:"
                             subtitleElement="Arthur Gonçalves Saldanha" />
                         <InfoCard titleElement="Endereço:"
@@ -92,7 +98,7 @@ export default function () {
                             subtitleElement="Brasileiro" />
                         <InfoCard titleElement="Profissão:"
                             subtitleElement="Desenvolvedor" />
-                    </Col>
+                    </section>
                 </Container>
             </main>
 

@@ -8,7 +8,7 @@ const InfoCard = (props: infoList) => {
         <>
                 <section className="w-100 d-flex 
                         justify-content-between align-items-center
-                        border p-4">
+                        border p-3">
                     <h6>
                         {props.titleElement}
                     </h6>
