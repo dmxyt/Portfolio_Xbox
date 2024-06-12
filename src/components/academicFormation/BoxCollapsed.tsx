@@ -1,5 +1,5 @@
 import { FunctionComponent, ReactNode, useState } from "react"
-import { Collapse, CardBody, Card, Button } from "reactstrap"
+import { Collapse, CardBody, Card, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap"
 
 type BoxCollapsedProps = {
     img_src: string,
@@ -13,19 +13,26 @@ export default function BoxCollapsed({ img_src, title, children, subtitle }: Box
     const toggle = () => setIsOpen(!isOpen);
     return (
         <>
-            <div className="d-flex ">
+            <div className="d-flex">
                 <a className="d-flex boxAcademicFormation" onClick={toggle}>
-                    <img src={img_src} alt={title} className="img-fluid rounded " />
+                    <img src={img_src} alt={title} className="img-fluid rounded" />
                 </a>
-                <Collapse isOpen={isOpen} className="w-75 ">
-                    <Card className="bg-dark p-2">
-                        <CardBody className="d-flex justify-content-center flex-column text-white">
-                            <h1>{title}</h1>
+                <Modal isOpen={isOpen} className="rounded">
+                    <ModalBody className="bg-dark rounded text-white">
+                        <header className="d-flex justify-content-between align-content-center">
+                            <span className="title">
+                                <h2>{title}</h2>
+                            </span>
+                            <button onClick={toggle} className="btn btn-transparent">
+                                <i className="bi bi-x-lg text-white"></i>
+                            </button>
+                        </header>
+                        <main className="d-flex justify-content-center flex-column text-white">
                             <h6>{subtitle}</h6>
                             {children}
-                        </CardBody>
-                    </Card>
-                </Collapse>
+                        </main>
+                    </ModalBody>
+                </Modal>
             </div>
         </>
     )

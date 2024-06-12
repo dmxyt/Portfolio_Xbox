@@ -23,7 +23,7 @@ export default function () {
             </header>
             <main className="bg-primary bg-gradient pb-5 
             text-white d-flex flex-column wallpaperPersonalInfo">
-                <Container fluid='sm' className="d-flex 
+                <Container fluid='md' className="d-flex 
                 justify-content-around align-items-center gap-5 ">
                     <section className="d-flex w-75" id="bio">
                         <div className="d-flex  flex-column">
