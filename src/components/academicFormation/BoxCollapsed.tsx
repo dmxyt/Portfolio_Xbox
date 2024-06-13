@@ -1,5 +1,5 @@
-import { FunctionComponent, ReactNode, useState } from "react"
-import { Collapse, CardBody, Card, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap"
+import { ReactNode, useState } from "react"
+import { Modal, ModalBody} from "reactstrap"
 
 type BoxCollapsedProps = {
     img_src: string,

@@ -25,7 +25,8 @@ export default function () {
                         </section>
                     </header>
                     <main>
-                        <section className="d-flex pt-3 gap-3 justify-content-between align-content-center">
+                        <section className="d-flex gap-3 defaultpadding
+                        justify-content-between align-content-center">
                             <BoxCollapsed img_src={LeiteCorteLogo} title="Perfil Independente"
                                 subtitle="Administrador de Redes Sociais">
                                 <ul>
