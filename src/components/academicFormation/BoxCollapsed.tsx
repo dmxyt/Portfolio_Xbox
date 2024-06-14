@@ -1,14 +1,16 @@
 import { ReactNode, useState } from "react"
-import { Modal, ModalBody} from "reactstrap"
+import { Modal, ModalBody, ModalHeader } from "reactstrap"
+import CardImg from "../MainContent/components/CardImg";
 
 type BoxCollapsedProps = {
     img_src: string,
     title: string,
     subtitle: string,
+    href: string,
     children: ReactNode
 }
 
-export default function BoxCollapsed({ img_src, title, children, subtitle }: BoxCollapsedProps) {
+export default function BoxCollapsed({ img_src, title, children, subtitle, href }: BoxCollapsedProps) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     return (
@@ -17,18 +19,19 @@ export default function BoxCollapsed({ img_src, title, children, subtitle }: Box
                 <a className="d-flex boxAcademicFormation" onClick={toggle}>
                     <img src={img_src} alt={title} className="img-fluid rounded" />
                 </a>
-                <Modal isOpen={isOpen} className="rounded">
-                    <ModalBody className="bg-dark rounded text-white">
-                        <header className="d-flex justify-content-between align-content-center">
+                <Modal isOpen={isOpen} className="rounded modal-xl modal-dialog-centered">
+                    <ModalHeader className='bg-dark' toggle={toggle}></ModalHeader>
+                    <ModalBody className="bg-dark text-white d-flex gap-5">
+                        <aside className="w-50 d-flex align-content-center justify-content-center">
+                            <CardImg title={title} description={subtitle}
+                            img_src={img_src} key={title+'-card'} href={href} 
+                            id={Math.round(Math.random())} small_size={false}/>
+                        </aside>
+                        <main className="d-flex justify-content-center flex-column text-white w-75">
                             <span className="title">
                                 <h2>{title}</h2>
+                                <h5>{subtitle}</h5>
                             </span>
-                            <button onClick={toggle} className="btn btn-transparent">
-                                <i className="bi bi-x-lg text-white"></i>
-                            </button>
-                        </header>
-                        <main className="d-flex justify-content-center flex-column text-white">
-                            <h6>{subtitle}</h6>
                             {children}
                         </main>
                     </ModalBody>

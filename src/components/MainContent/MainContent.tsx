@@ -20,7 +20,8 @@ export default function MainContent() {
                             {projects.map(project => (
                                 <CardImg id={project.id} href={project.href}
                                     description={project.description} img_src={project.img_src}
-                                    title={project.title} key={project.id} />
+                                    title={project.title} key={project.id} small_size
+                                 />
                             ))}
                         </Row>
                     </section>

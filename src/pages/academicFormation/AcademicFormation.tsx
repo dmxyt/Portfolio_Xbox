@@ -26,7 +26,7 @@ export default function () {
                             <b className="border p-1 rounded">Do mais recente para o mais antigo</b>
                         </section>
                     </header>
-                    <main className="d-flex gap-3 defaultpadding">
+                    <main className="d-flex gap-3 defaultpadding flex-wrap">
                         <BoxCollapsed img_src={SenacLogo} title={"Ensino Médio Técnico Integrado"}
                             subtitle="Diploma do Ensino Médio">
                             <ul>

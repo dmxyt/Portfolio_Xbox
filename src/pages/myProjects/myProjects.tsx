@@ -10,7 +10,8 @@ function MyProjectsPage() {
                         <div className="profile-area d-flex flex-column w-100 gap-2">
                             <div className="text-white">
                                 <a href="/">
-                                    <i className="bi bi-box-arrow-left h5 justify-self-left text-center"></i>
+                                    <i className="bi bi-box-arrow-left 
+                                    h5 justify-self-left text-center"></i>
                                 </a>
                             </div>
                             <div className="d-flex gap-2">
@@ -53,7 +54,7 @@ function MyProjectsPage() {
                             {projects.map(project => (
                                 <CardImg id={project.id} href={project.href}
                                     description={project.description} img_src={project.img_src}
-                                    title={project.title} key={project.id} />
+                                    title={project.title} key={project.id} small_size />
                             ))}
                         </Row>
                     </main>
