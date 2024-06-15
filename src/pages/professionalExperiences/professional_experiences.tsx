@@ -3,28 +3,15 @@ import BoxCollapsed from "../../components/academicFormation/BoxCollapsed"
 import SupremaLogo from '../../../public/supremalogo.jpeg'
 import LeiteCorteLogo from '../../../public/Leite&CorteLogo.png'
 import ChaveiroBaraoLogo from '../../../public/ChaveiroCard.png'
+import NavHeader from "../../components/NavHeader/NavHeader"
 
 export default function () {
     return (
         <>
-            <div className="wallpaperMyProjects bg-dark text-white">
+            <main className="wallpaperMyProjects bg-dark text-white">
+                <NavHeader title="Experiências Profissionais"  />
                 <Container>
-                    <header className="text-white">
-                        <section className="link text-white pt-3 d-flex gap-3 align-items-center">
-                            <a href="/">
-                                <i className="bi bi-box-arrow-left h3 "></i>
-                            </a>
-                            <h1>Experiências Profissionais</h1>
-                        </section>
-                        <section className="filter d-flex gap-2 align-content-center">
-                            <span className="d-flex gap-1 p-1">
-                                <i className="bi bi-funnel-fill"></i>
-                                Filtro:
-                            </span>
-                            <b className="border p-1 rounded">Do mais recente para o mais antigo</b>
-                        </section>
-                    </header>
-                    <main className="d-flex gap-3 defaultpadding
+                    <div className="d-flex gap-3 defaultpadding
                         justify-content-center align-content-center flex-wrap">
                         <BoxCollapsed img_src={LeiteCorteLogo} title="Perfil Independente"
                          href="#"   subtitle="Administrador de Redes Sociais">
@@ -62,9 +49,9 @@ export default function () {
                                 <li>Organização de ferramentas a serem utilizadas durante as aulas.</li>
                             </ul>
                         </BoxCollapsed>
-                    </main>
+                    </div>
                 </Container>
-            </div>
+            </main>
         </>
     )
 }

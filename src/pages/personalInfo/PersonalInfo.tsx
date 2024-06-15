@@ -12,13 +12,12 @@ import BootstrapLogo from '../../../public/icons/bootstrap-5-1.svg'
 export default function () {
     return (
         <>
-            <header className="bg-primary bg-gradient 
-                text-white pt-2 ">
-                <Container fluid className="d-flex gap-3 align-items-center">
+            <header className="bg-primary bg-gradient text-white p-3">
+                <Container fluid className="d-flex align-items-center gap-2">
                     <a href="/">
-                        <i className="bi bi-box-arrow-left h3 "></i>
+                        <i className="bi bi-arrow-left nav-link text-white"></i>
                     </a>
-                    <h1>Informações Pessoais</h1>
+                    <b className="h6 mb-0">Informações Pessoais</b>
                 </Container>
             </header>
             <main className="bg-primary bg-gradient pb-5 
