@@ -1,10 +1,11 @@
 import AccountImg from '../../../public/AccountCircle.png'
-
+import Filter from '../StylizedElements/filter'
 type headerNavProps = {
-    title: string
+    title: string,
+    filter_section?: boolean 
 }
 
-export default function ({ title }: headerNavProps) {
+export default function ({ title, filter_section }: headerNavProps) {
     return (
         <>
             <header className="w-100 bg-primary 
@@ -35,13 +36,7 @@ export default function ({ title }: headerNavProps) {
                     </section>
                 </nav>
             </header>
-            <section className="filter d-flex gap-2 align-content-center container pt-2">
-                <span className="d-flex gap-1 p-1 small">
-                    <i className="bi bi-funnel-fill "></i>
-                    Filtro:
-                </span>
-                <b className="border p-1 rounded small">Do mais recente para o mais antigo</b>
-            </section>
+            {filter_section? <Filter/> : null}
         </>
     )
 }

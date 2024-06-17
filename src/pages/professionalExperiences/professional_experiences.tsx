@@ -9,7 +9,7 @@ export default function () {
     return (
         <>
             <main className="wallpaperMyProjects bg-dark text-white">
-                <NavHeader title="Experiências Profissionais"  />
+                <NavHeader title="Experiências Profissionais" filter_section  />
                 <Container>
                     <div className="d-flex gap-3 defaultpadding
                         justify-content-center align-content-center flex-wrap">

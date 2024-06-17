@@ -89,11 +89,11 @@ $green: #0E7A0D;
 
 //CompetencesPage
 .competencePageWallpaper{
-    min-height: 100vh;
+    min-height: 60vh;
     max-width: auto;
     background-image: url('../../public/xbox-controller.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 

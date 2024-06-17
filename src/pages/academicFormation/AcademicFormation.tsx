@@ -10,7 +10,7 @@ export default function () {
     return (
         <>
             <div className="wallpaperMyProjects bg-dark text-white ">
-                <NavHeader title="Formações Acadêmicas" />
+                <NavHeader title="Formações Acadêmicas" filter_section />
                 <main className="d-flex gap-3 defaultpadding flex-wrap container">
                     <BoxCollapsed img_src={SenacLogo} title={"Ensino Médio Técnico Integrado"}
                         subtitle="Diploma do Ensino Médio" href="#">
