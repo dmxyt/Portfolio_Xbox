@@ -1,4 +1,4 @@
-import { Container } from "reactstrap"
+
 import BoxCollapsed from "../../components/academicFormation/BoxCollapsed"
 import SenacLogo from '../../../public/senac-logo.png'
 import IFlogo from '../../../public/if-logo.png'
@@ -9,7 +9,7 @@ import NavHeader from "../../components/NavHeader/NavHeader"
 export default function () {
     return (
         <>
-            <div className="wallpaperMyProjects bg-dark text-white ">
+            <div className="wallpaperMyProjects bg-black text-white ">
                 <NavHeader title="Formações Acadêmicas" filter_section />
                 <main className="d-flex gap-3 defaultpadding flex-wrap container">
                     <BoxCollapsed img_src={SenacLogo} title={"Ensino Médio Técnico Integrado"}

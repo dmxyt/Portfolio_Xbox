@@ -11,6 +11,10 @@ $green: #0E7A0D;
     margin: 0;
 }
 
+html{
+    overflow: hidden;
+}
+
 .defaultpadding{
     padding-top: 30vh;
 }
@@ -50,13 +54,16 @@ $green: #0E7A0D;
     border-radius: 1vh;
     display: flex;
     padding: 2rem;
+    border: 0.3vh solid transparent;
     justify-content: center;
-    background-color: $bg-dark;
+    background-color: $grayscale-opacity;
     flex-direction: column;
+    transition: 0.3s;
     margin-bottom: 1rem;
     &:hover{
         border: 0.3vh solid $green;
         box-shadow: 0 0 4vh $green;
+        scale: 1.1;
     }
 }
 
@@ -71,6 +78,7 @@ $green: #0E7A0D;
     &:hover{
         box-shadow: 0 0 4vh $green;
         border: 0.3vh solid $green;
+        scale: 1.1;
     }
 }
 
@@ -133,7 +141,7 @@ $green: #0E7A0D;
 
 //wallpaper
 .wallpaperPersonalInfo{
-    min-height: 93.8vh;
+    min-height: 100vh;
     max-width: auto;
     justify-content: center;
 }

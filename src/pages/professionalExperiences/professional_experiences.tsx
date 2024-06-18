@@ -8,7 +8,7 @@ import NavHeader from "../../components/NavHeader/NavHeader"
 export default function () {
     return (
         <>
-            <main className="wallpaperMyProjects bg-dark text-white">
+            <main className="wallpaperMyProjects bg-black text-white">
                 <NavHeader title="Experiências Profissionais" filter_section  />
                 <Container>
                     <div className="d-flex gap-3 defaultpadding

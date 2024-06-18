@@ -3,7 +3,7 @@ import MainContent from "../../components/MainContent/MainContent";
 function HomePage() {
   return (
     <>
-      <div className="mainpageWallpaper">
+      <div className="mainpageWallpaper d-flex flex-column">
         <Header />
         <MainContent />
       </div>

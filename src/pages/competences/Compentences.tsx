@@ -2,6 +2,7 @@ import { Container, Col, Row } from "reactstrap"
 import XboxController from '../../../public/xbox-controller.png'
 import NavHeader from "../../components/NavHeader/NavHeader"
 export default function () {
+
     return (
         <>
             <div className="bg-black text-white">
@@ -10,7 +11,7 @@ export default function () {
                     style={{ minHeight: '93.2vh' }}>
                     <section className="w-75 align-content-center ">
                         <img src={XboxController} alt="Xbox Controller"
-                            className="img-fluid w-75 align-self-center" />
+                            className="img-fluid  align-self-center" />
                     </section>
                     <aside className="bg-gradient pt-4 
                     w-25 d-flex flex-column container">
@@ -93,65 +94,8 @@ export default function () {
                                 </div>
                             </section>
                         </Container>
-
                     </aside>
                 </main>
-                {/* <div className=" d-flex flex-column 
-                    justify-content-center align-items-center ">
-                    <img src={XboxController} alt="Xbox Controller"
-                        className="img-fluid w-75" />
-
-                    <aside className="gap-5 d-flex align-content-between flex-wrap">
-                        <button className="btn btn-dark">
-                            Javascript
-                        </button>
-                        <button className="btn btn-dark">
-                            Python
-                        </button>
-                        <button className="btn btn-dark">
-                            C
-                        </button>
-                        <button className="btn btn-dark">
-                            C++
-                        </button>
-                        <button className="btn btn-dark">
-                            React
-                        </button>
-                        <button className="btn btn-dark">
-                            Typescript
-                        </button>
-                        <button className="btn btn-dark">
-                            CSS3
-                        </button>
-                        <button className="btn btn-dark">
-                            HTML5
-                        </button>
-                        <button className="btn btn-dark">
-                            SASS
-                        </button>
-                        <button className="btn btn-dark">
-                            Next JS
-                        </button>
-                        <button className="btn btn-dark">
-                            PostgreSQL
-                        </button>
-                        <button className="btn btn-dark">
-                            MongoDB
-                        </button>
-                        <button className="btn btn-dark">
-                            Bootstrap
-                        </button>
-                        <button className="btn btn-dark">
-                            Node.js
-                        </button>
-                        <button className="btn btn-dark text-center">
-                            Azure Fundamentals
-                        </button>
-                        <button className="btn btn-dark text-center">
-                            Inteligência Artificial
-                        </button>
-                    </aside>
-                </div> */}
             </div>
         </>
     )

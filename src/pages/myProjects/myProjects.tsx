@@ -37,9 +37,6 @@ function MyProjectsPage() {
                                 <span className="">2</span>
                             </li>
                         </ul>
-                        <section className="diskuse">
-                            {/* <Contacts /> */}
-                        </section>
                     </aside>
                     <main className="w-75 pt-5 px-5 d-flex flex-column gap-3">
                         <h1>All Projects</h1>

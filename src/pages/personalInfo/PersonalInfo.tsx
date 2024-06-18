@@ -1,8 +1,6 @@
 import { Container, Col } from "reactstrap"
-import CollapseSection from "../../components/personalInfo/sectionCollapsed";
 import ProfileImg from '../../../public/AccountCircle.png'
 import InfoCard from "../../components/personalInfo/InfoCard";
-
 import JavascriptLogo from '../../../public/icons/logo-javascript.svg'
 import TypescriptLogo from '../../../public/icons/typescript.svg'
 import ReactLogo from '../../../public/icons/react-2.svg'
@@ -12,7 +10,7 @@ import BootstrapLogo from '../../../public/icons/bootstrap-5-1.svg'
 export default function () {
     return (
         <>
-            <header className="bg-primary bg-gradient text-white p-3">
+            <header className="bg-primary bg-gradient text-white p-3 ">
                 <Container fluid className="d-flex align-items-center gap-2">
                     <a href="/">
                         <i className="bi bi-arrow-left nav-link text-white"></i>
@@ -21,7 +19,7 @@ export default function () {
                 </Container>
             </header>
             <main className="bg-primary bg-gradient pb-5 
-            text-white d-flex flex-column wallpaperPersonalInfo">
+            text-white d-flex flex-column wallpaperPersonalInfo ">
                 <Container fluid='md' className="d-flex 
                 justify-content-around align-items-center gap-5 ">
                     <section className="d-flex w-75" id="bio">
@@ -83,9 +81,6 @@ export default function () {
                                 className="img-fluid accountImg" />
                         </div>
                     </section>
-                    {/* <section className="account col-6 col-sm-4 
-                    d-flex justify-content-left align-items-center">
-                    </section> */}
                     <section className="d-flex flex-column infoCardBox w-25">
                         <InfoCard titleElement="Nome Completo:"
                             subtitleElement="Arthur Gonçalves Saldanha" />
