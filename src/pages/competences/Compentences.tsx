@@ -1,24 +1,57 @@
 import { Container, Col, Row } from "reactstrap"
 import XboxController from '../../../public/xbox-controller.png'
 import NavHeader from "../../components/NavHeader/NavHeader"
+import InfoCard from "../../components/personalInfo/InfoCard"
 export default function () {
 
     return (
         <>
             <div className="bg-black text-white">
                 <NavHeader title="Competências" />
-                <main className="d-flex flex-wrap"
-                    style={{ minHeight: '93.2vh' }}>
-                    <section className="w-75 align-content-center ">
-                        <img src={XboxController} alt="Xbox Controller"
-                            className="img-fluid  align-self-center" />
+                <main className="d-flex flex-wrap container d-flex justify-content-between"
+                    style={{ minHeight: '100vh' }}>
+                    <section className="d-flex flex-column infoCardBox w-25 pt-5 flex-wrap">
+                        <InfoCard titleElement="Javascript"
+                            subtitleElement="</>" />
+                        <InfoCard titleElement="Python"
+                            subtitleElement="</>" />
+                        <InfoCard titleElement="C"
+                            subtitleElement="</>" />
+                        <InfoCard titleElement="C++"
+                            subtitleElement="</>" />
+                        <InfoCard titleElement="Typescript"
+                            subtitleElement="</>" />
+                        <InfoCard titleElement="Inteligência Artificial"
+                            subtitleElement="ferramenta" />
                     </section>
-                    <aside className="bg-gradient pt-4 
-                    w-25 d-flex flex-column container">
-                        <section className="title">
-                            <h4>Conheça algumas de minhas competências:</h4>
-                        </section>
-                        <Container className="d-flex gap-5 flex-column">
+                    <section className="d-flex flex-column infoCardBox w-25 align-self-center flex-wrap">
+                        <InfoCard titleElement="React DOM"
+                            subtitleElement="framework" />
+                        <InfoCard titleElement="Next JS"
+                            subtitleElement="framework" />
+                        <InfoCard titleElement="Node.js"
+                            subtitleElement="framework" />
+                        <InfoCard titleElement="Bootstrap:"
+                            subtitleElement="framework" />
+                        <InfoCard titleElement="Colab"
+                            subtitleElement="IDE" />
+                    </section>
+                    <section className="d-flex flex-column infoCardBox w-25 align-self-end mb-5 pb-5 flex-wrap">
+                        <InfoCard titleElement="CSS3"
+                            subtitleElement="style_sheets" />
+                        <InfoCard titleElement="HTML5:"
+                            subtitleElement="</>" />
+                        <InfoCard titleElement="SASS"
+                            subtitleElement="framework" />
+                        <InfoCard titleElement="PostgreSQL:"
+                            subtitleElement="database" />
+                        <InfoCard titleElement="MongoDB:"
+                            subtitleElement="database" />
+                        <InfoCard titleElement="Azure Fundamentals"
+                            subtitleElement="database" />
+                    </section>
+
+                    {/* <Container className="d-flex gap-5 flex-column">
                             <section className="d-flex flex-column">
                                 <h5>Linguagens de Programação:</h5>
                                 <div className="d-flex gap-2 
@@ -93,8 +126,7 @@ export default function () {
                                     </button>
                                 </div>
                             </section>
-                        </Container>
-                    </aside>
+                        </Container> */}
                 </main>
             </div>
         </>
