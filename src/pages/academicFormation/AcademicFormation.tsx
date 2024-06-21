@@ -11,7 +11,7 @@ export default function () {
         <>
             <div className="wallpaperMyProjects bg-black text-white ">
                 <NavHeader title="Formações Acadêmicas" filter_section />
-                <main className="d-flex gap-3 defaultpadding flex-wrap container">
+                <main className="d-flex gap-2 defaultpadding flex-wrap container">
                     <BoxCollapsed img_src={SenacLogo} title={"Ensino Médio Técnico Integrado"}
                         subtitle="Diploma do Ensino Médio" href="#">
                         <ul>

@@ -102,22 +102,29 @@ export default function () {
 
     return (
         <>
-            <div className="bg-black text-white">
-                <NavHeader title="Competências" />
-                <main className="d-flex container align-items-center row"
-                    style={{ minHeight: '100vh' }}>
-                    <img src={image} alt="Controle do Xbox" className="img-fluid w-75" />
-                    <section className="d-flex flex-column infoCardBox flex-wrap w-25">
-                        <div className="d-flex justify-content-between">
-                            <button onClick={() => handleClick('prev')} className="text-white btn btn-transparent">
-                                <i className="bi bi-arrow-left small"></i>
-                            </button>
-                            <button onClick={() => handleClick('next')} className="text-white btn btn-transparent">
-                                <i className="bi bi-arrow-right small"></i>
-                            </button>
-                        </div>
-                        {selectedComponent}
-                    </section>
+            <div className="bg-black text-white" >
+                <NavHeader title="Habilidades e Competências:" />
+                <main>
+                    <Container className="d-flex justify-content-center align-items-center gap-5 vh-100">
+                        <Col className="col-6 p-3">
+                            <img src={image} alt="Controle do Xbox" className="img-fluid" />
+                        </Col>
+                        <Col className="d-flex flex-column align-items-center justify-content-center vh-100">
+                            <header className="d-flex justify-content-between  align-items-center w-50">
+                                <button onClick={() => handleClick('prev')} className="text-white btn btn-transparent">
+                                    <i className="bi bi-arrow-left small"></i>
+                                </button>
+                                <button onClick={() => handleClick('next')} className="text-white btn btn-transparent">
+                                    <i className="bi bi-arrow-right small"></i>
+                                </button>
+                            </header>
+                            <main className="d-flex flex-column w-50 align-items-center 
+                            justify-content-center">
+                                {selectedComponent}
+                            </main>
+                        </Col>
+                    </Container>
+
                 </main>
             </div>
         </>
