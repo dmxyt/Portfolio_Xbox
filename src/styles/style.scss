@@ -82,6 +82,16 @@ html{
     }
 }
 
+.animation-hover{
+    transition: 0.3s;
+    padding: 0.1vh;
+    border: 0.3vh solid transparent;
+    &:hover{
+        box-shadow: 0 0 4vh $green;
+        border: 0.3vh solid $green;
+    }
+}
+
 .small-width{
     width: 20vh;
 }
@@ -150,3 +160,4 @@ html{
 .small-font{
     font-size: smaller;
 }
+

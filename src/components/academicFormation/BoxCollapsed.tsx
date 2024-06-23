@@ -19,13 +19,16 @@ export default function BoxCollapsed({ img_src, title, children, subtitle, href 
                 <a className="d-flex boxAcademicFormation" onClick={toggle}>
                     <img src={img_src} alt={title} className="img-fluid rounded" />
                 </a>
-                <Modal isOpen={isOpen} className="rounded modal-xl modal-dialog-centered">
-                    <ModalHeader className='bg-dark' toggle={toggle}></ModalHeader>
-                    <ModalBody className="bg-dark text-white d-flex gap-5">
-                        <aside className="w-50 d-flex align-content-center justify-content-center">
+                <Modal isOpen={isOpen} className="rounded modal-xl modal-dialog-centered" >
+                    {/* <ModalHeader className='bg-dark ' toggle={toggle}></ModalHeader> */}
+                    <button className="btn btn-success rounded-0 rounded-top" onClick={toggle}>
+                        <i className="bi bi-x-lg"></i>
+                    </button>
+                    <ModalBody className="bg-dark text-white d-flex gap-5 rounded-bottom">
+                        <aside className="d-flex justify-content-center align-items-center w-25">
                             <CardImg title={title} description={subtitle}
-                            img_src={img_src} key={title+'-card'} href={href} 
-                            id={Math.round(Math.random())} small_size={false}/>
+                                img_src={img_src} key={title + '-card'} href={href}
+                                id={Math.round(Math.random())} small_size={true} />
                         </aside>
                         <main className="d-flex justify-content-center flex-column text-white w-75">
                             <span className="title">

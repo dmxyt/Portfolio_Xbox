@@ -18,7 +18,7 @@ export default function ({ title, filter_section }: headerNavProps) {
                             <h4 className="mb-0">{title}</h4>
                         </a>
                     </section>
-                    <section>
+                    <section className='animation-hover rounded'>
                         <a className="d-flex gap-2 text-white link-offset-2 link-underline 
             link-underline-opacity-0" href="personalInformation" style={{ "width": "auto" }}>
                             <section className="d-flex flex-column">
