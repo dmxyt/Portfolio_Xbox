@@ -7,7 +7,8 @@ interface project {
     img_src: string,
     title: string,
     description: string,
-    href: string
+    href: string,
+    languages?: string[]
 }
 
 const projects : project[] = [
@@ -16,21 +17,30 @@ const projects : project[] = [
         img_src: ChaveiroCard,
         title: 'Chaveiro Barão',
         description: "O Chaveiro Barão é uma empresa...",
-        href: 'https://chaveiro-web.vercel.app/'
+        href: 'https://chaveiro-web.vercel.app/',
+        languages: [
+            'Typescript', 'React'
+        ]
     },
     {
         id: 2,
         img_src: LilyPinkCycleCard,
         title: 'Lily Pink Cycle',
         description: "A Lily Pink Cycle é ...",
-        href: 'https://lily-pink-cycle-app.vercel.app/'
+        href: 'https://lily-pink-cycle-app.vercel.app/',
+        languages: [
+            'Javascript', 'React'
+        ]
     },
     {
         id: 3,
         img_src: SpotifyCard,
         title: 'Spotify Web Simulation',
         description: "A Spotify Web Simulation é ...",
-        href: 'https://spotify-web-clone-ruddy.vercel.app/'
+        href: 'https://spotify-web-clone-ruddy.vercel.app/',
+        languages: [
+            'Javascript', 'React'
+        ]
     }
 ];
 
