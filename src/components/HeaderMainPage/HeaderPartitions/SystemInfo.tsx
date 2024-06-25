@@ -3,7 +3,6 @@ import TimeUpdated from "../../MainContent/components/Time"
 export default function () {
     return (
         <>
-
             <div className="hardware-info d-flex flex-row gap-2 
             align-items-center w-25 justify-content-end"
                 style={{ "width": "auto" }}>

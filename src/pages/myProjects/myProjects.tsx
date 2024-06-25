@@ -3,19 +3,10 @@ import { project } from "../../database/projects";
 import CardImg from "../../components/MainContent/components/CardImg";
 import { Row } from "reactstrap";
 import { useState } from "react";
+import FilterButtons from "../../components/StylizedElements/filterButtons";
 
 function MyProjectsPage() {
     const [filteredProducts, setFilteredProducts] = useState<project[]>(projects);
-    const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
-    const filterProducts = (language: string | null) => {
-        if (language === null) {
-            setFilteredProducts(projects);
-        } else {
-            setFilteredProducts(projects.filter(product => product.languages?.includes(language)));
-        }
-        setSelectedLanguage(language);
-    };
-
     return (
         <div className="bg-dark text-white wallpaperMyProjects">
             <div className="d-flex">
@@ -32,30 +23,30 @@ function MyProjectsPage() {
                         </div>
                     </div>
                     <ul className="gap-2 d-flex flex-column list-unstyled">
-                        <li className="d-flex justify-content-between">
-                            <button onClick={() => filterProducts(null)}>
-                                <span>Todos os Projetos</span>
-                                <span>3</span>
-                            </button>
-                        </li>
-                        <li className="d-flex justify-content-between">
-                            <button onClick={() => filterProducts('Typescript')}>
-                                <span>Typescript</span>
-                                <span>1</span>
-                            </button>
-                        </li>
-                        <li className="d-flex justify-content-between">
-                            <button onClick={() => filterProducts('React')}>
-                                <span>React</span>
-                                <span>3</span>
-                            </button>
-                        </li>
-                        <li className="d-flex justify-content-between">
-                            <button onClick={() => filterProducts('Javascript')}>
-                                <span>Javascript</span>
-                                <span>2</span>
-                            </button>
-                        </li>
+                        <FilterButtons
+                            title="Todos os Projetos"
+                            numberOfProjects={projects.length}
+                            projects={projects}
+                            setFilteredProducts={setFilteredProducts}
+                        />
+                        <FilterButtons
+                            title="Typescript"
+                            numberOfProjects={1}
+                            projects={projects}
+                            setFilteredProducts={setFilteredProducts}
+                        />
+                        <FilterButtons
+                            title="React"
+                            numberOfProjects={3}
+                            projects={projects}
+                            setFilteredProducts={setFilteredProducts}
+                        />
+                        <FilterButtons
+                            title="Javascript"
+                            numberOfProjects={2}
+                            projects={projects}
+                            setFilteredProducts={setFilteredProducts}
+                        />
                     </ul>
                 </aside>
                 <main className="w-75 pt-5 px-5 d-flex flex-column gap-3">
