@@ -5,6 +5,7 @@ interface CardImgProps extends project {
 }
 
 export default function CardImg({img_src, title, id, description, href, small_size}: CardImgProps ) {
+    console.log(title)
     return (
         <>
             <a className="flex-column d-flex" key={id} href={href} 

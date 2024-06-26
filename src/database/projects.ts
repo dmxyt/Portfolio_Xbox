@@ -29,7 +29,8 @@ const projects : project[] = [
         description: "A Lily Pink Cycle é ...",
         href: 'https://lily-pink-cycle-app.vercel.app/',
         languages: [
-            'Javascript', 'React'
+            'React',
+            'Javascript'
         ]
     },
     {

@@ -5,21 +5,21 @@ $grayscale-opacity: #a0a0a01c;
 $green: #0E7A0D;
 
 //all website:
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html{
+html {
     overflow: hidden;
 }
 
-.defaultpadding{
+.defaultpadding {
     padding-top: 30vh;
 }
 
-.mainpageWallpaper{
+.mainpageWallpaper {
     min-height: 100vh;
     max-width: auto;
     background-image: url('../../public/wallpaper.jpg');
@@ -28,27 +28,29 @@ html{
     background-position: center;
 }
 
-.white-text{
+.white-text {
     color: $white-text;
 }
-.profileImg{
-    width: 5vh;
+
+.imgSize {
+    width: 1vh;
 }
 
-.tabSelector{
+.tabSelector {
     border: 0.3vh solid transparent;
     background-color: $grayscale-opacity;
     border-radius: 10vh;
     padding: 3rem;
     padding: 1.25vh 1.5vh;
-    &:hover{
+
+    &:hover {
         border: 0.3vh solid $green;
         box-shadow: 0 0 4vh $green;
     }
 }
 
 // Box:
-.boxAcademicFormation{
+.boxAcademicFormation {
     width: 25vh;
     height: 25vh;
     border-radius: 1vh;
@@ -60,53 +62,60 @@ html{
     flex-direction: column;
     transition: 0.3s;
     margin-bottom: 1rem;
-    &:hover{
+
+    &:hover {
         border: 0.3vh solid $green;
         box-shadow: 0 0 4vh $green;
         scale: 1.05;
     }
 }
 
-.width-config{
+.width-config {
     width: 3vh;
 }
 
-.cardBox{
+.cardBox {
     transition: 0.3s;
     padding: 0.1vh;
     border: 0.3vh solid transparent;
-    &:hover{
+
+    &:hover {
         box-shadow: 0 0 4vh $green;
         border: 0.3vh solid $green;
         scale: 1.1;
     }
 }
 
-.animation-hover{
+.animation-hover {
     transition: 0.3s;
     padding: 0.1vh;
     border: 0.3vh solid transparent;
-    &:hover{
+
+    &:hover {
         box-shadow: 0 0 4vh $green;
         border: 0.3vh solid $green;
     }
 }
 
-.small-width{
+.small-width {
     width: 20vh;
 }
 
+.profileImg{
+    width: 5vh;
+}
+
 //My projects page:
-.wallpaperMyProjects{
+.wallpaperMyProjects {
     min-height: 100vh;
 }
 
-.gap-50{
+.gap-50 {
     gap: 10vh;
 }
 
 //CompetencesPage
-.competencePageWallpaper{
+.competencePageWallpaper {
     min-height: 60vh;
     max-width: auto;
     background-image: url('../../public/xbox-controller.png');
@@ -116,7 +125,7 @@ html{
 }
 
 // Aside (OffCanva)
-.offCanvas{
+.offCanvas {
     display: flex;
     margin: 2rem;
     border-radius: 1rem;
@@ -124,11 +133,11 @@ html{
 
 
 //recursos
-.font{
+.font {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.icon-size{
+.icon-size {
     width: 3rem;
 }
 
@@ -137,11 +146,11 @@ html{
 
 //Personal Information:
 
-.accountImg{
+.accountImg {
     width: 155vh;
 }
 
-.title{
+.title {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -150,14 +159,58 @@ html{
 // }
 
 //wallpaper
-.wallpaperPersonalInfo{
+.wallpaperPersonalInfo {
     min-height: 100vh;
     max-width: auto;
     justify-content: center;
 }
 
 
-.small-font{
+.small-font {
     font-size: smaller;
 }
 
+.active-btn {
+    border-right-color: #0E7A0D;
+    background-color: $bg-dark;
+    border-width: 1vh;
+}
+
+//Graph
+.graph {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    fill: transparent;
+    stroke-width: 12px;
+    stroke: $bg-dark;
+}
+
+:root {
+    --size: 255;
+}
+
+.graph svg.cor {
+    stroke: $green;
+    stroke-dasharray: 255;
+    stroke-dashoffset: calc(var(--size) - 36.42);
+    transform: rotate(-90deg);
+    transform-origin: center;
+}

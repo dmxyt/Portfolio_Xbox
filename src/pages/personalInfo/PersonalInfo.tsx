@@ -11,7 +11,7 @@ export default function () {
     return (
         <>
             <header className="bg-primary bg-gradient text-white p-3 ">
-                <Container fluid className="d-flex align-items-center gap-2">
+                <Container className="d-flex align-items-center gap-2">
                     <a href="/">
                         <i className="bi bi-arrow-left nav-link text-white"></i>
                     </a>
