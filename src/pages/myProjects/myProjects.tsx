@@ -1,10 +1,10 @@
-import { projects } from "../../database/projects";
-import { project } from "../../database/projects";
+import { projects, project } from "../../database/projects";
 import CardImg from "../../components/MainContent/components/CardImg";
 import { Row } from "reactstrap";
 import { useState } from "react";
 import FilterButtons from "../../components/StylizedElements/filterButtons";
 import AccountSection from "../../components/HeaderMainPage/HeaderPartitions/AccountSection";
+import Graph from "../../components/myProjectsPage/graph.tsx/graph";
 
 function MyProjectsPage() {
     const [filteredProducts, setFilteredProducts] = useState<project[]>(projects);
@@ -40,27 +40,23 @@ function MyProjectsPage() {
                             />
                         ))}
                     </ul>
-                    <footer className="d-flex  fixed-bottom p-5">
-                        <div className="info">
-                            <span className="d-flex gap-1">
+                    <footer className="d-flex fixed-bottom p-5">
+                        <div>
+                            <span className="d-flex gap-1 mt-4 align-items-end">
                                 Total de Projetos:
                                 <b>
                                     {projects.length}
                                 </b>
                             </span>
-                            <b >
-                                Feito por @arthurgonsal
-                            </b>
+                            <span className="text-secondary d-flex gap-1">
+                                Produzido por
+                                <a href="personalInformation" 
+                                className="nav-link"> 
+                                @arthurGS
+                                </a>
+                            </span>
                         </div>
-                        <div className="graph">
-                            <svg>
-                                <circle cx="50" cy="50" r="40" />
-                            </svg>
-                            <svg className="cor">
-                                <circle cx="50" cy="50" r="40" />
-                            </svg>
-                            <span className="counter">25%</span>
-                        </div>
+                        <Graph percentage={15}/>
                     </footer>
                 </aside>
                 <main className="w-75 pt-5 px-5 d-flex flex-column gap-3">

@@ -3,7 +3,7 @@ $bg-dark: #555454;
 $white-text: #F8F8FF;
 $grayscale-opacity: #a0a0a01c;
 $green: #0E7A0D;
-
+$size: 260;
 //all website:
 * {
     box-sizing: border-box;
@@ -203,14 +203,10 @@ svg {
     stroke: $bg-dark;
 }
 
-:root {
-    --size: 255;
-}
-
 .graph svg.cor {
     stroke: $green;
     stroke-dasharray: 255;
-    stroke-dashoffset: calc(var(--size) - 36.42);
+    stroke-dashoffset: calc($size - 36.42);
     transform: rotate(-90deg);
     transform-origin: center;
 }
