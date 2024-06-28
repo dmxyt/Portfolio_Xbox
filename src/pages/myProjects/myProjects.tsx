@@ -40,23 +40,20 @@ function MyProjectsPage() {
                             />
                         ))}
                     </ul>
-                    <footer className="d-flex fixed-bottom p-5">
-                        <div>
+                    <footer className="footer mt-auto d-flex justify-content-between px-4 pb-3">
+                        <div >
                             <span className="d-flex gap-1 mt-4 align-items-end">
                                 Total de Projetos:
-                                <b>
-                                    {projects.length}
-                                </b>
+                                <b>{projects.length}</b>
                             </span>
                             <span className="text-secondary d-flex gap-1">
                                 Produzido por
-                                <a href="personalInformation" 
-                                className="nav-link"> 
-                                @arthurGS
-                                </a>
+                                <a href="personalInformation" className="nav-link">@arthurGS</a>
                             </span>
                         </div>
-                        <Graph percentage={15}/>
+                        <div className="graph-container">
+                            <Graph percentage={15} />
+                        </div>
                     </footer>
                 </aside>
                 <main className="w-75 pt-5 px-5 d-flex flex-column gap-3">
@@ -66,7 +63,7 @@ function MyProjectsPage() {
                             <i className="bi bi-funnel-fill"></i>
                             Filtro:
                         </span>
-                        <b className="border p-1 rounded">Relevância</b>
+                        <b className="border rounded p-2 ">Relevância</b>
                     </section>
                     <Row className="align-items-end">
                         {filteredProducts.map(project => (

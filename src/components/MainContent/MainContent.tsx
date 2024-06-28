@@ -7,10 +7,10 @@ export default function MainContent() {
     // Creating the mainContent of the Portfolio, consting Projects and other stuff
     return (
         <>
-            <section className="mainSection px-5 pb-5 fixed-bottom">
+            <section className="mainSection px-5 pb-5 fixed-bottom flex-wrap d-flex">
                 <Container className="d-flex flex-column gap-4" fluid>
                     <section className="d-flex flex-row gap-4">
-                        <Row className="align-items-end">
+                        <Row className="align-items-end flex-wrap">
                             {projects.map(project => (
                                 <CardImg id={project.id} href={project.href}
                                     description={project.description} img_src={project.img_src}

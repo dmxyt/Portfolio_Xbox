@@ -4,6 +4,7 @@ $white-text: #F8F8FF;
 $grayscale-opacity: #a0a0a01c;
 $green: #0E7A0D;
 $size: 260;
+
 //all website:
 * {
     box-sizing: border-box;
@@ -42,7 +43,6 @@ html {
     border-radius: 10vh;
     padding: 3rem;
     padding: 1.25vh 1.5vh;
-
     &:hover {
         border: 0.3vh solid $green;
         box-shadow: 0 0 4vh $green;
@@ -101,7 +101,7 @@ html {
     width: 20vh;
 }
 
-.profileImg{
+.profileImg {
     width: 5vh;
 }
 
@@ -209,4 +209,25 @@ svg {
     stroke-dashoffset: calc($size - 36.42);
     transform: rotate(-90deg);
     transform-origin: center;
+}
+
+// My Projects Page : 
+.footer {
+    position: relative;
+    width: 100%;
+    .graph-container {
+        bottom: 0;
+        left: 0;
+    }
+}
+//  Media query:
+
+@media (max-width: 920px) {
+    html{
+        overflow: auto;
+    }
+    .mainSection{
+        // 
+    }
+
 }

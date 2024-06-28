@@ -8,7 +8,7 @@ const Header = () => {
         <>
             <header className='p-5'>
                 <Container fluid className='white-text'>
-                    <Row className=' justify-content-between w-100 '>
+                    <Row className=' justify-content-between w-100 flex-wrap'>
                         <AccountSection  showCompleteName showScore smallSize/>
                         <TabSelector />
                         <SystemInfo />
