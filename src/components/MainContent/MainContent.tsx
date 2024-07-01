@@ -2,9 +2,9 @@ import { Container, Row } from "reactstrap"
 import { projects } from '../../database/projects'
 import CardImg from "./components/CardImg"
 import Box from "./components/Box"
+import XboxButtons from "../StylizedElements/XboxButtons"
 
 export default function MainContent() {
-    // Creating the mainContent of the Portfolio, consting Projects and other stuff
     return (
         <>
             <section className="mainSection px-5 pb-5 fixed-bottom flex-wrap d-flex">
@@ -30,6 +30,7 @@ export default function MainContent() {
                         href="https://drive.google.com/file/d/1FYl3iC4gEwcw1MVYhEyIQW1m18sLAuml/view?usp=sharing" 
                         target={true} />
                     </Row>
+                    <XboxButtons />
                 </Container>
             </section>
         </>

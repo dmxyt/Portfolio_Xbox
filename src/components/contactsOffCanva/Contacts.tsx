@@ -12,10 +12,7 @@ export default function Contact() {
                 data-toggle="tooltip" data-placement="bottom">
                 <i className={`bi bi-telephone-fill`}></i>
             </button>
-            <Offcanvas isOpen={isOpen} toggle={handleClose} className="offCanvas bg-black text-light
-            ">
-                {/* <OffcanvasHeader toggle={handleClose} > */}
-                {/* toggle={handleClose} */}
+            <Offcanvas isOpen={isOpen} toggle={handleClose} className="offCanvas bg-black text-light">
                 <header className="d-flex justify-content-between w-100 px-4 pt-3 h4">
                     <i className="bi bi-xbox"></i>
                     <i className="bi bi-people-fill"></i>
@@ -25,7 +22,6 @@ export default function Contact() {
                     <i className="bi bi-person-circle"></i>
                 </header>
                 <hr />
-                {/* </OffcanvasHeader> */}
                 <OffcanvasBody className="px-4 pt-0 d-flex flex-column gap-3 ">
                     <header className="title">
                         <h3>Contatos:</h3>

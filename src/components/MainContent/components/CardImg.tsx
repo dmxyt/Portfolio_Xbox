@@ -4,7 +4,7 @@ interface CardImgProps extends project {
     small_size: boolean
 }
 
-export default function CardImg({img_src, title, id, description, href, small_size}: CardImgProps ) {
+export default function CardImg({img_src, title, id, href, small_size}: CardImgProps ) {
     console.log(title)
     return (
         <>
@@ -12,7 +12,6 @@ export default function CardImg({img_src, title, id, description, href, small_si
             target='_blank' style={ small_size? {'width': '20vh'} : {}}  >
                 <img src={img_src} alt={title} 
                 className={`img-fluid rounded cardBox`} />
-                {/* <span>{description}</span> */}
             </a>
         </>
     )

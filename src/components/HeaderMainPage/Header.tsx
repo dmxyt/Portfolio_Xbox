@@ -3,7 +3,6 @@ import AccountSection from './HeaderPartitions/AccountSection';
 import TabSelector from './HeaderPartitions/TabSelector';
 import SystemInfo from './HeaderPartitions/SystemInfo';
 const Header = () => {
-    //Creating a Nav Header, based on Xbox UI Header Menu
     return (
         <>
             <header className='p-5'>

@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react"
-import { Modal, ModalBody, ModalHeader } from "reactstrap"
+import { Modal, ModalBody } from "reactstrap"
 import CardImg from "../MainContent/components/CardImg";
 
 type BoxCollapsedProps = {
@@ -20,7 +20,6 @@ export default function BoxCollapsed({ img_src, title, children, subtitle, href 
                     <img src={img_src} alt={title} className="img-fluid rounded" />
                 </a>
                 <Modal isOpen={isOpen} className="rounded modal-xl modal-dialog-centered" >
-                    {/* <ModalHeader className='bg-dark ' toggle={toggle}></ModalHeader> */}
                     <button className="btn btn-success rounded-0 rounded-top" onClick={toggle}>
                         <i className="bi bi-x-lg"></i>
                     </button>
