@@ -50,12 +50,12 @@ export default function () {
                             <li>Certificado JavaScript</li>
                             <li>Certificado HTML5</li>
                             <li>Certificado CSS3</li>
-                            <li>Certificado de JavaScript (Lógica de Programação)</li>
+                            <li>Certificado de Javascript (Lógica de Programação)</li>
                             <li>Certificado de database relacional (PostgreSQL)</li>
                             <li>Certificado de Typescript</li>
                             <li>Certificado de SASS</li>
                             <li>Certificado de NextJS</li>
-                            <li>Certificado de Bootstrap</li>
+                            <li>Certificado de Bootstrap</li>hddh
                             <li>Certificado de Fundamentos do React</li>
                         </ul>
                     </BoxCollapsed>
