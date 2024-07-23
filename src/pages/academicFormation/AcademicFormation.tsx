@@ -3,7 +3,7 @@ import BoxCollapsed from "../../components/academicFormation/BoxCollapsed"
 import SenacLogo from '../../../public/senac-logo.png'
 import IFlogo from '../../../public/if-logo.png'
 import SenaiLogo from '../../../public/senai-logo.png'
-import MicrosoftLogo from '../../../public/microsoft-logo.svg'
+import MicrosoftLogo from '../../../public/Microsoft_logo.png'
 import OneBitCodeLogo from '../../../public/oneBitCode-logo.png'
 import NavHeader from "../../components/NavHeader/NavHeader"
 export default function () {
@@ -50,7 +50,7 @@ export default function () {
                             <li>Certificado JavaScript</li>
                             <li>Certificado HTML5</li>
                             <li>Certificado CSS3</li>
-                            <li>Certificado de Javascript (Lógica de Programação)</li>
+                            <li>Certificado de JavaScript (Lógica de Programação)</li>
                             <li>Certificado de database relacional (PostgreSQL)</li>
                             <li>Certificado de Typescript</li>
                             <li>Certificado de SASS</li>
@@ -63,4 +63,4 @@ export default function () {
             </div>
         </>
     )
-}
+} 

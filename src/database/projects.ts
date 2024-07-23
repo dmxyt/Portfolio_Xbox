@@ -1,6 +1,9 @@
 import ChaveiroCard from '../../public/ChaveiroCard.png'
 import LilyPinkCycleCard from '../../public/LilyPinkCycleCard.png'
 import SpotifyCard from '../../public/SpotifyCard.png'
+import LadingPageLogo from '../../public/currencyLogo.png'
+import ItauLogo from '../../public/logoItaú.png'
+import CalculatorLogo from '../../public/calculatorLogo.png'
 
 interface project {
     id: number,
@@ -41,6 +44,36 @@ const projects : project[] = [
         href: 'https://spotify-web-clone-ruddy.vercel.app/',
         languages: [
             'Javascript', 'React'
+        ]
+    },
+    {
+        id: 4,
+        img_src: LadingPageLogo,
+        title: 'Lading Page',
+        description: "Lading Page é ...",
+        href: 'https://landing-page-five-alpha-73.vercel.app/',
+        languages: [
+            'Typescript', 'React'
+        ]
+    },
+    {
+        id: 5,
+        img_src: ItauLogo,
+        title: 'Itaú Website',
+        description: "Itaú Website é ...",
+        href: '/',
+        languages: [
+            'Javascript'
+        ]
+    },
+    {
+        id: 6,
+        img_src: CalculatorLogo,
+        title: 'Area e Perímetro',
+        description: "Area e Perímetro Website é ...",
+        href: '/',
+        languages: [
+            'Javascript'
         ]
     }
 ];
