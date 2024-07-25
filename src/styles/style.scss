@@ -12,12 +12,17 @@ $size: 260;
     margin: 0;
 }
 
-html {
+html,body {
     overflow: hidden;
 }
 
 .defaultpadding {
     padding-top: 30vh;
+}
+
+.mainSection {
+    position: relative;
+    overflow: visible;
 }
 
 .mainpageWallpaper {
@@ -62,7 +67,6 @@ html {
     flex-direction: column;
     transition: 0.3s;
     margin-bottom: 1rem;
-
     &:hover {
         border: 0.3vh solid $green;
         box-shadow: 0 0 4vh $green;
@@ -76,13 +80,29 @@ html {
 
 .cardBox {
     transition: 0.3s;
-    padding: 0.1vh;
     border: 0.3vh solid transparent;
-
     &:hover {
         box-shadow: 0 0 4vh $green;
         border: 0.3vh solid $green;
         scale: 1.1;
+    }
+}
+
+.flex-wrap-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.flex-wrap-3 > .card-img {
+    flex: 1 1 calc(33.333% - 0.5rem); /* Cada cartão ocupa cerca de 1/3 do container */
+}
+
+/* Ajusta o layout para telas menores */
+@media (max-width: 1040px) {
+    .flex-wrap-3 > .card-img {
+        flex: 1 1 calc(50% - 0.5rem); /* Cada cartão ocupa cerca de 1/2 do container */
     }
 }
 
@@ -220,14 +240,18 @@ svg {
         left: 0;
     }
 }
+
 //  Media query:
 
 @media (max-width: 920px) {
-    html{
-        overflow: auto;
+    html, body {
+        overflow: auto; 
     }
-    .mainSection{
-        // 
-    }
-
 }
+
+@media (max-width: 1400px) {
+    .btn-xbox {
+        display: none !important;
+    }
+}
+
