@@ -20,9 +20,8 @@ html,body {
     padding-top: 30vh;
 }
 
-.mainSection {
-    position: relative;
-    overflow: visible;
+.mainSection{
+    
 }
 
 .mainpageWallpaper {
@@ -78,6 +77,10 @@ html,body {
     width: 3vh;
 }
 
+.card-width-responsive{
+    width: 30vh;
+}
+
 .cardBox {
     transition: 0.3s;
     border: 0.3vh solid transparent;
@@ -110,7 +113,6 @@ html,body {
     transition: 0.3s;
     padding: 0.1vh;
     border: 0.3vh solid transparent;
-
     &:hover {
         box-shadow: 0 0 4vh $green;
         border: 0.3vh solid $green;
@@ -230,6 +232,9 @@ svg {
     transform: rotate(-90deg);
     transform-origin: center;
 }
+.width-responsive-cardbox{
+    min-width: 30vh;
+}
 
 // My Projects Page : 
 .footer {
@@ -242,8 +247,7 @@ svg {
 }
 
 //  Media query:
-
-@media (max-width: 920px) {
+@media (max-width: 791px) {
     html, body {
         overflow: auto; 
     }
@@ -252,6 +256,28 @@ svg {
 @media (max-width: 1400px) {
     .btn-xbox {
         display: none !important;
+    }
+}
+
+@media (max-width: 1093px) {
+    .width-responsive-cardbox{
+        min-width: 20vh;
+        // max-width: 30vh;
+    }
+}
+
+@media (max-width: 1200px){
+    .justify-content-items{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 434px){
+    .flex-wrap-timing{
+        flex-wrap: wrap;
+    }
+    .justify-content-items{
+        padding: 0 4vh;
     }
 }
 
