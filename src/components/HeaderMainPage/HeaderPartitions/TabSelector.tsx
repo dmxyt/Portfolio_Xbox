@@ -4,7 +4,7 @@ export default function TabSelector() {
     return (
         <>
             <section className=" d-flex h6 gap-2 white-text align-items-center
-            justify-content-center w-25 flex-wrap"
+            justify-content-center w-50 flex-wrap"
                 style={{ "width": "auto" }}>
                 <TabBtn href="myProjects" item_name="joystick" key={Math.round(1) * 100} />
                 <Contact />
