@@ -59,7 +59,6 @@ html,body {
     height: 25vh;
     border-radius: 1vh;
     display: flex;
-    padding: 2rem;
     border: 0.3vh solid transparent;
     justify-content: center;
     background-color: $grayscale-opacity;
@@ -115,10 +114,6 @@ html,body {
 
 .small-width {
     width: 20vh;
-}
-
-.profileImg {
-    width: 5vh;
 }
 
 //My projects page:
@@ -218,7 +213,10 @@ html,body {
         stroke-width: 12px;
         stroke: $bg-dark;
     }
-    
+    .logo-profile-img{
+        width: 5vh;
+        height: 5vh;
+    }
     .graph svg.cor {
         stroke: $green;
         stroke-dasharray: 255;
@@ -281,7 +279,7 @@ html,body {
         padding: 0 4vh;
     }
 }
-@media (max-height: 360px) {
+@media (max-height: 1000px) {
     .flex-wrap-timing{
         flex-wrap: wrap;
         justify-content: center;
@@ -301,8 +299,18 @@ html,body {
     .account{
         font-size: smaller;
     }
-    .profile-img{
-        width: 5vh;
-        height: 5vh;
+    .profile-img {
+        max-width: 5vh;
+        max-height: 5vh;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media(max-height: 463px){
+    .graph{
+        display: none;
     }
 }

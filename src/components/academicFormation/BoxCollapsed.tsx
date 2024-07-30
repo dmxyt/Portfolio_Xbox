@@ -16,8 +16,8 @@ export default function BoxCollapsed({ img_src, title, children, subtitle, href 
     return (
         <>
             <div className="d-flex">
-                <a className="d-flex boxAcademicFormation" onClick={toggle}>
-                    <img src={img_src} alt={title} className="img-fluid rounded" />
+                <a className="d-flex boxAcademicFormation p-1" onClick={toggle}>
+                    <img src={img_src} alt={title} className="img-fluid rounded px-3" />
                 </a>
                 <Modal isOpen={isOpen} className="rounded modal-xl modal-dialog-centered" >
                     <button className="btn btn-success rounded-0 rounded-top" onClick={toggle}>
