@@ -19,7 +19,7 @@ const FirstComponent = () => {
                 subtitleElement="</>" />
             <InfoCard titleElement="Typescript"
                 subtitleElement="</>" />
-            <InfoCard titleElement="Inteligência Artificial"
+            <InfoCard titleElement="IA Generativa"
                 subtitleElement="ferramenta" />
         </>
     )
@@ -102,30 +102,28 @@ export default function () {
 
     return (
         <>
-            <div className="bg-black text-white" >
+            <div className="bg-black text-white vh-100 overflow-auto">
                 <NavHeader title="Habilidades e Competências:" />
-                <main>
-                    <Container className="d-flex justify-content-center align-items-center gap-5 vh-100">
-                        <Col className="col-6 p-3">
-                            <img src={image} alt="Controle do Xbox" className="img-fluid" />
-                        </Col>
-                        <Col className="d-flex flex-column align-items-center justify-content-center vh-100">
-                            <header className="d-flex justify-content-between  align-items-center w-50">
-                                <button onClick={() => handleClick('prev')} className="text-white btn btn-transparent">
-                                    <i className="bi bi-arrow-left small"></i>
-                                </button>
-                                <button onClick={() => handleClick('next')} className="text-white btn btn-transparent">
-                                    <i className="bi bi-arrow-right small"></i>
-                                </button>
-                            </header>
-                            <main className="d-flex flex-column w-50 align-items-center 
-                            justify-content-center">
-                                {selectedComponent}
-                            </main>
-                        </Col>
-                    </Container>
-
-                </main>
+                <Container
+                    className="d-flex h-100 wrap-competences-page
+                    gap-3 pb-4 justify-content-center align-items-center">
+                    <div className="pt-3 d-flex justify-content-center w-75">
+                        <img src={image} alt="Controle do Xbox" className="img-fluid responsive-image" />
+                    </div>
+                    <div className="d-flex flex-column align-items-center justify-content-center w-75 w-lg-50">
+                        <header className="d-flex justify-content-between w-75">
+                            <button onClick={() => handleClick('prev')} className="text-white btn btn-transparent">
+                                <i className="bi bi-arrow-left small"></i>
+                            </button>
+                            <button onClick={() => handleClick('next')} className="text-white btn btn-transparent">
+                                <i className="bi bi-arrow-right small"></i>
+                            </button>
+                        </header>
+                        <main className="d-flex flex-column align-items-center justify-content-center w-75">
+                            {selectedComponent}
+                        </main>
+                    </div>
+                </Container>
             </div>
         </>
     );

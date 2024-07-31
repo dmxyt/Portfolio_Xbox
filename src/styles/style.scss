@@ -290,7 +290,14 @@ html,body {
     .flex-wrap-3 > .card-img {
         flex: 1 1 calc(50% - 0.5rem); /* Cada cartão ocupa cerca de 1/2 do container */
     }
+    .wrap-competences-page{
+        flex-wrap: wrap;
+    }
+    .responsive-image{
+        width: 50%;
+    }
 }
+
 @media (max-height: 668px) {
     .width-responsive-cardbox {
         min-width: 30vh;
@@ -312,5 +319,8 @@ html,body {
 @media(max-height: 463px){
     .graph{
         display: none;
+    }
+    .wrap-competences-page{
+        flex-wrap: wrap;
     }
 }

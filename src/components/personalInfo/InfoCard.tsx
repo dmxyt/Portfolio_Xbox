@@ -6,7 +6,7 @@ type infoList = {
 const InfoCard = (props: infoList) => {
     return (
         <>
-                <section className="w-100 d-flex 
+                <section className="w-100 d-flex gap-3
                         justify-content-between align-items-center
                         border p-3">
                     <h6>
