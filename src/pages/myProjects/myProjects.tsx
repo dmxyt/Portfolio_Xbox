@@ -21,11 +21,11 @@ function MyProjectsPage() {
         <div className="bg-dark text-white">
             <div className="d-flex">
                 <aside className="w-25 border-end border-secondary border-3
-                vh-100 d-flex flex-column gap-5 ">
+                vh-100 d-flex flex-column gap-5 bg-dark overflow-auto">
                     <header className="text-white d-flex w-100 gap-3 
                     justify-content-center align-content-center px-5 pt-5">
-                        <i className="bi bi-collection align-self-center imgSize"></i>
-                        <AccountSection imgSize="3vh" href="/" />
+                        <i className="bi bi-collection align-self-center "></i>
+                        <AccountSection href="/" />
                     </header>
                     <ul className="d-flex flex-column list-unstyled">
                         {btnFilterData.map((button) => (
@@ -40,13 +40,13 @@ function MyProjectsPage() {
                             />
                         ))}
                     </ul>
-                    <footer className="footer mt-auto d-flex justify-content-between px-4 pb-3">
-                        <div >
+                    <footer className="footer mt-auto d-flex justify-content-between px-4 pb-3 flex-wrap">
+                        <div>
                             <span className="d-flex gap-1 mt-4 align-items-end">
                                 Total de Projetos:
                                 <b>{projects.length}</b>
                             </span>
-                            <span className="text-secondary d-flex gap-1">
+                            <span className="text-secondary d-flex gap-1 flex-wrap">
                                 Produzido por
                                 <a href="personalInformation" className="nav-link">@arthurGS</a>
                             </span>
@@ -58,20 +58,20 @@ function MyProjectsPage() {
                 </aside>
                 <main className="w-75 pt-5 px-5 d-flex flex-column gap-3">
                     <h1>Meus Projetos</h1>
-                    <section className="filter d-flex gap-2 align-content-center">
-                        <span className="d-flex gap-1 p-1">
+                    <section className="filter d-flex gap-2 align-content-center small flex-wrap">
+                        <span className="d-flex gap-1 pt-2">
                             <i className="bi bi-funnel-fill"></i>
                             Filtro:
                         </span>
                         <b className="border rounded p-2 ">Relevância</b>
                     </section>
-                    <Row className="align-items-end">
+                    <div className="align-items-end d-flex flex-wrap gap-2">
                         {filteredProducts.map(project => (
                             <CardImg id={project.id} href={project.href}
                                 description={project.description} img_src={project.img_src}
                                 title={project.title} key={project.id} small_size />
                         ))}
-                    </Row>
+                    </div>
                 </main>
             </div>
         </div>

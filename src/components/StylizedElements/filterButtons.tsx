@@ -18,7 +18,6 @@ const FilterButtons: React.FC<FilterBtnProps> = ({ title, numberOfProjects, proj
             setFilteredProducts(projects.filter(product => product.languages?.includes(language)));
         }
     }
-
     return (
         <li className="d-flex">
             <button
@@ -32,7 +31,7 @@ const FilterButtons: React.FC<FilterBtnProps> = ({ title, numberOfProjects, proj
                 <span className="w-50 d-flex">
                     {title}
                 </span>
-                <span>
+                <span className="hidden-numbers">
                     {numberOfProjects}
                 </span>
             </button>

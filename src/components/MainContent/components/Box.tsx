@@ -8,7 +8,7 @@ type box = {
 export default function Box({ icon, description, href, target }: box) {
     return (
         <>
-            <a className="bg-dark d-flex align-items-center cardbox px-3
+            <a className="bg-dark d-flex align-items-center px-3 cardBox
             gap-5 rounded text-decoration-none width-responsive-cardbox" 
                 href={href} target={target ? "_blank" : ''}>
                 <span className="">

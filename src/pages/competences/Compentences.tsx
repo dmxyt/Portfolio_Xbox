@@ -1,4 +1,4 @@
-import { Container, Col, Row } from "reactstrap"
+import { Container } from "reactstrap"
 import { useState } from "react"
 import XboxController from '../../../public/xbox-controller.png'
 import XboxControllerBackPlate from '../../../public/Xbox-controller-back.png'

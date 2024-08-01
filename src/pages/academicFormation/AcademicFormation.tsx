@@ -1,7 +1,7 @@
 
 import BoxCollapsed from "../../components/academicFormation/BoxCollapsed"
 import SenacLogo from '../../../public/senac-logo.png'
-import IFlogo from '../../../public/if-logo.png'
+import IFlogo from '../../../public/if_logo.png'
 import SenaiLogo from '../../../public/senai-logo.png'
 import MicrosoftLogo from '../../../public/Microsoft_logo.png'
 import OneBitCodeLogo from '../../../public/oneBitCode-logo.png'
