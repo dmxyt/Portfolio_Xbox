@@ -61,7 +61,7 @@ const projects : project[] = [
         img_src: ItauLogo,
         title: 'Itaú Website',
         description: "Itaú Website é ...",
-        href: '/',
+        href: 'https://itau-website.vercel.app/',
         languages: [
             'Javascript'
         ]
