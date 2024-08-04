@@ -4,17 +4,21 @@ import SupremaLogo from '../../../public/supremalogo.jpeg'
 import LeiteCorteLogo from '../../../public/Leite&CorteLogo.png'
 import ChaveiroBaraoLogo from '../../../public/ChaveiroCard.png'
 import NavHeader from "../../components/NavHeader/NavHeader"
-
+import {motion} from 'framer-motion'
 export default function () {
     return (
         <>
-            <main className="wallpaperMyProjects bg-black text-white">
-                <NavHeader title="Experiências Profissionais" filter_section  />
+            <motion.main
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="wallpaperMyProjects bg-black text-white">
+                <NavHeader title="Experiências Profissionais" filter_section />
                 <Container>
                     <div className="d-flex gap-3 defaultpadding
                         justify-content-center align-content-center flex-wrap">
                         <BoxCollapsed img_src={LeiteCorteLogo} title="Perfil Independente"
-                         href="#"   subtitle="Administrador de Redes Sociais">
+                            href="#" subtitle="Administrador de Redes Sociais">
                             <b className="small">Agosto de 2020 ~ Novembro de 2020</b>
                             <ul>
                                 <li>Criação de conteúdo para redes sociais.</li>
@@ -24,7 +28,7 @@ export default function () {
                             </ul>
                         </BoxCollapsed>
                         <BoxCollapsed img_src={ChaveiroBaraoLogo} title="Chaveiro Barão"
-                         href="#"   subtitle="Auxiliar Geral">
+                            href="#" subtitle="Auxiliar Geral">
                             <b className="small">Dezembro de 2020 ~ Janeiro de 2024</b>
                             <ul>
                                 <li>Atendimento ao Cliente (Presencialmente e via redes sociais).</li>
@@ -51,7 +55,7 @@ export default function () {
                         </BoxCollapsed>
                     </div>
                 </Container>
-            </main>
+            </motion.main>
         </>
     )
 }

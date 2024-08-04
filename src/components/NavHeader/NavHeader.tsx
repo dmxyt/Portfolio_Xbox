@@ -11,7 +11,7 @@ export default function ({ title, filter_section }: headerNavProps) {
             <header className="w-100 bg-success container-fluid p-2">
                 <nav className='d-flex justify-content-between container'>
                     <section className="text-white small d-flex">
-                        <a href="/" className="nav-link d-flex justify-content-center align-items-center gap-2">
+                        <a href="/home" className="nav-link d-flex justify-content-center align-items-center gap-2">
                             <i className="bi bi-arrow-left"></i>
                             <h4 className="mb-0">{title}</h4>
                         </a>

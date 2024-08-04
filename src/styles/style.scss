@@ -90,6 +90,18 @@ body {
     }
 }
 
+.profile-section {
+    transition: 0.3s;
+    border: 0.3vh solid transparent;
+    width: 25vh;
+    cursor: pointer;
+    border-radius: 100%;
+    &:hover {
+        box-shadow: 0 0 4vh $green;
+        border: 0.3vh solid $green;
+    }
+}
+
 .flex-wrap-3 {
     display: flex;
     flex-wrap: wrap;
@@ -244,10 +256,11 @@ svg {
 .small-size {
     width: 20vh !important;
     height: 20vh !important;
-  }
+}
 
 //  Media query:
 @media (max-width: 791px) {
+
     html,
     body {
         overflow: auto;
@@ -303,9 +316,11 @@ svg {
         flex: 1 1 calc(50% - 0.5rem);
         /* Cada cartão ocupa cerca de 1/2 do container */
     }
+
     .accountImg {
         width: 40vh;
     }
+
     .wrap-competences-page {
         flex-wrap: wrap;
     }
@@ -339,4 +354,42 @@ svg {
     .wrap-competences-page {
         flex-wrap: wrap;
     }
+}
+
+/* Estilizando o scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $grayscale-opacity;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $bg-dark;
+}
+
+.slide-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-dark;
+    transform-origin: bottom;
+}
+
+.slide-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-dark;
+    transform-origin: top;
 }

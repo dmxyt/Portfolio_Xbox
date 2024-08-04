@@ -6,10 +6,15 @@ import SenaiLogo from '../../../public/senai-logo.png'
 import MicrosoftLogo from '../../../public/Microsoft_logo.png'
 import OneBitCodeLogo from '../../../public/oneBitCode-logo.png'
 import NavHeader from "../../components/NavHeader/NavHeader"
+import { motion } from 'framer-motion'
 export default function () {
     return (
         <>
-            <div className="wallpaperMyProjects bg-black text-white ">
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="wallpaperMyProjects bg-black text-white ">
                 <NavHeader title="Formações Acadêmicas" filter_section />
                 <main className="d-flex gap-3 defaultpadding justify-content-center align-content-center flex-wrap">
                     <BoxCollapsed img_src={SenacLogo} title={"Ensino Médio Técnico Integrado"}
@@ -60,7 +65,7 @@ export default function () {
                         </ul>
                     </BoxCollapsed>
                 </main>
-            </div>
+            </motion.div>
         </>
     )
 } 

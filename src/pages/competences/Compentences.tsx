@@ -1,11 +1,11 @@
 import { Container } from "reactstrap"
 import { useState } from "react"
+import {motion} from 'framer-motion'
 import XboxController from '../../../public/xbox-controller.png'
 import XboxControllerBackPlate from '../../../public/Xbox-controller-back.png'
 import XboxControllerUpperPlate from '../../../public/Xbox-controller-upper.png'
 import NavHeader from "../../components/NavHeader/NavHeader"
 import InfoCard from "../../components/personalInfo/InfoCard"
-
 const FirstComponent = () => {
     return (
         <>
@@ -102,7 +102,11 @@ export default function () {
 
     return (
         <>
-            <div className="bg-black text-white vh-100 overflow-auto">
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="bg-black text-white vh-100 overflow-auto">
                 <NavHeader title="Habilidades e Competências:" />
                 <Container
                     className="d-flex h-100 wrap-competences-page
@@ -124,7 +128,7 @@ export default function () {
                         </main>
                     </div>
                 </Container>
-            </div>
+            </motion.div>
         </>
     );
 }

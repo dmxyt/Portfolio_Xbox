@@ -1,10 +1,10 @@
 import { projects, project } from "../../database/projects";
 import CardImg from "../../components/MainContent/components/CardImg";
-import { Row } from "reactstrap";
 import { useState } from "react";
 import FilterButtons from "../../components/StylizedElements/filterButtons";
 import AccountSection from "../../components/HeaderMainPage/HeaderPartitions/AccountSection";
 import Graph from "../../components/myProjectsPage/graph.tsx/graph";
+import {motion} from 'framer-motion'
 
 function MyProjectsPage() {
     const [filteredProducts, setFilteredProducts] = useState<project[]>(projects);
@@ -18,14 +18,18 @@ function MyProjectsPage() {
     ]
 
     return (
-        <div className="bg-dark text-white">
+        <motion.div 
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        className="bg-dark text-white">
             <div className="d-flex">
                 <aside className="w-25 border-end border-secondary border-3
                 vh-100 d-flex flex-column gap-5 bg-dark overflow-auto">
                     <header className="text-white d-flex w-100 gap-3 
                     justify-content-center align-content-center px-5 pt-5">
                         <i className="bi bi-collection align-self-center "></i>
-                        <AccountSection href="/" />
+                        <AccountSection href="/home" />
                     </header>
                     <ul className="d-flex flex-column list-unstyled">
                         {btnFilterData.map((button) => (
@@ -74,7 +78,7 @@ function MyProjectsPage() {
                     </div>
                 </main>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
