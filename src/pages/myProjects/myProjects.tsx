@@ -4,7 +4,7 @@ import { useState } from "react";
 import FilterButtons from "../../components/StylizedElements/filterButtons";
 import AccountSection from "../../components/HeaderMainPage/HeaderPartitions/AccountSection";
 import Graph from "../../components/myProjectsPage/graph.tsx/graph";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 function MyProjectsPage() {
     const [filteredProducts, setFilteredProducts] = useState<project[]>(projects);
@@ -18,11 +18,12 @@ function MyProjectsPage() {
     ]
 
     return (
-        <motion.div 
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}
-        className="bg-dark text-white">
+        <motion.div
+            initial={{ scale: 1.1, filter: "brightness(0)" }}
+            animate={{ scale: 1, filter: "brightness(1)" }}
+            exit={{ scale: 1.1, filter: "brightness(0.3)" }}
+            transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
+            className="bg-dark text-white">
             <div className="d-flex">
                 <aside className="w-25 border-end border-secondary border-3
                 vh-100 d-flex flex-column gap-5 bg-dark overflow-auto">

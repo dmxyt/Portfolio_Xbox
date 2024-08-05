@@ -11,9 +11,10 @@ export default function () {
     return (
         <>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                initial={{ scale: 1.1, filter: "brightness(0)" }}
+                animate={{ scale: 1, filter: "brightness(1)" }}
+                exit={{ scale: 1.1, filter: "brightness(0.3)" }}
+                transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
                 className="wallpaperMyProjects bg-black text-white ">
                 <NavHeader title="Formações Acadêmicas" filter_section />
                 <main className="d-flex gap-3 defaultpadding justify-content-center align-content-center flex-wrap">

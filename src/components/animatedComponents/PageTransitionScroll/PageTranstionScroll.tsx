@@ -1,25 +1,32 @@
 import { motion } from 'framer-motion'
+import { ReactNode } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
-const transtion = (OgComponent: React.ComponentType) => {
-    return () => {
-        <>
-            <OgComponent />
-            <motion.div
-                className="slide-in"
-                initial={{ scaleY: 0 }}
-                animate={{ scaleY: 0 }}
-                exit={{ scaleY: 1 }}
-                transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            />
-            <motion.div
-                className="slide-out"
-                initial={{ scaleY: 1 }}
-                animate={{ scaleY: 0 }}
-                exit={{ scaleY: 0 }}
-                transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            />
-        </>
-    }
+type TransitionProps = {
+    children: ReactNode;
 }
 
-export default transtion;
+const Transition = ({children}: TransitionProps) => {
+    return (
+        <>
+            <AnimatePresence>
+
+                <motion.div
+                    initial={{ filter: "brightness(0)" }}
+                    animate={{ filter: "brightness(1)" }}
+                    exit={{ filter: "brightness(0.3)" }}
+                    transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
+                />
+                {children}
+                <motion.div
+                    initial={{ filter: "brightness(0)" }}
+                    animate={{ filter: "brightness(1)" }}
+                    exit={{ filter: "brightness(0.3)" }}
+                    transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
+                />
+            </AnimatePresence>
+        </>
+    )
+}
+
+export default Transition;

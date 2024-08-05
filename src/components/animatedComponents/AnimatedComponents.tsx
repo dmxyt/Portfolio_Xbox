@@ -15,7 +15,7 @@ export default function AnimatedRoutes() {
             <AnimatePresence mode='wait'>
                 <Routes location={location} key={location.pathname}>
                     <Route path="/" element={<SelectAccount />} />
-                    <Route path="/home" element={<HomePage />} />
+                    <Route path="home" element={<HomePage />} />
                     <Route path="competences" element={<Compentences />} />
                     <Route path="personalInformation" element={<PersonalInfo />} />
                     <Route path="academicformation" element={<AcademicFormation />} />

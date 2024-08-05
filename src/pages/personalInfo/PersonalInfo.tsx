@@ -7,10 +7,15 @@ import ReactLogo from '../../../public/icons/react-2.svg';
 import PythonLogo from '../../../public/icons/python-4.svg';
 import SassLogo from '../../../public/icons/sass-1.svg';
 import BootstrapLogo from '../../../public/icons/bootstrap-5-1.svg';
-import transtion from "../../components/animatedComponents/PageTransitionScroll/PageTranstionScroll";
+import { motion } from "framer-motion";
 function PersonalInfo() {
     return (
-        <div>
+        <motion.div
+            initial={{ scale: 1.1, filter: "brightness(0)" }}
+            animate={{ scale: 1, filter: "brightness(1)" }}
+            exit={{ scale: 1.1, filter: "brightness(0.3)" }}
+            transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
+        >
             <header className="bg-primary bg-gradient text-white p-3">
                 <Container className="d-flex align-items-center gap-2">
                     <a href="/home">
@@ -79,7 +84,7 @@ function PersonalInfo() {
                     </section>
                 </Container>
             </main>
-        </div>
+        </motion.div>
     );
 }
 
