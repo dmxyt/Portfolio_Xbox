@@ -18,9 +18,7 @@ const AccountSection: React.FC<AccountSectionProps> = ({ showScore, smallSize, i
                         className='img-fluid logo-profile-img'  />
                 ) : (
                     <img src={AccountImg} alt="Foto de Perfil"
-                        className='img-fluid align-self-center logo-profile-img'
-                        // style={{ minHeight: '5vh' }}
-                         />
+                        className='img-fluid align-self-center logo-profile-img'/>
                 )}
                 <section className="d-flex flex-column justify-content-center align-content-center">
                     <span className="d-flex align-items-center">

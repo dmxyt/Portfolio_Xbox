@@ -20,10 +20,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
-/*
-initial={{ filter: "brightness(0.1)", scale: 2.2 }}
-        animate={{ filter: "brightness(1)", scale: 1 }}
-        exit={{ filter: "brightness(0.1)", scale: 0.8 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
-*/

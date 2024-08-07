@@ -42,7 +42,7 @@ const ThirdComponent = () => (
 const components = [FirstComponent, SecondComponent, ThirdComponent];
 const images = [XboxController, XboxControllerUpperPlate, XboxControllerBackPlate];
 
-const HomePage = () => {
+function HomePage() {
     const [componentIndex, setComponentIndex] = useState(0);
 
     const handleClick = (direction: string) => {
@@ -96,9 +96,9 @@ const HomePage = () => {
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={componentIndex}
-                                    initial={{ filter: "brightness(0)",x: 50 }}
+                                    initial={{ filter: "brightness(0)", x: 50 }}
                                     animate={{ filter: "brightness(1)", x: 0 }}
-                                    exit={{ filter: "brightness(0.3)", x:-50 }}
+                                    exit={{ filter: "brightness(0.3)", x: -50 }}
                                     transition={{ duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] }}
                                 >
                                     <SelectedComponent />

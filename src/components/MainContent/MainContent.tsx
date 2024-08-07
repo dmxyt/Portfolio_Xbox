@@ -2,7 +2,6 @@ import { Container} from "reactstrap"
 import { projects } from '../../database/projects'
 import CardImg from "./components/CardImg"
 import Box from "./components/Box"
-import XboxButtons from "../StylizedElements/XboxButtons"
 
 export default function MainContent() {
     const midpoint = Math.ceil(projects.length / 2);
@@ -48,7 +47,6 @@ export default function MainContent() {
                             <Box icon={"file-earmark-richtext-fill"} description={'Currículo'} href="https://drive.google.com/file/d/1FYl3iC4gEwcw1MVYhEyIQW1m18sLAuml/view?usp=sharing" target={true} />
                         </div>
                     </div>
-                    <XboxButtons />
                 </Container>
             </section>
         </>

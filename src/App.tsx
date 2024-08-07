@@ -1,5 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import AnimatedRoutes from "./components/animatedComponents/AnimatedComponents";
+import AnimatedRoutes from "./components/Router/AnimatedComponents";
 function App() {
   return (
     <>

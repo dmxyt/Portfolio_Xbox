@@ -16,8 +16,10 @@ export default function ({ title, filter_section }: headerNavProps) {
                             <h4 className="mb-0">{title}</h4>
                         </a>
                     </section>
-                    <section className='animation-hover rounded d-flex align-items-center'>
-                        <a className="d-flex gap-2 text-white link-offset-2 link-underline link-underline-opacity-0 align-items-center" href="personalInformation" style={{ width: "auto" }}>
+                    <section className=' rounded d-flex align-items-center'>
+                        <a className="d-flex gap-2 text-white link-offset-2 link-underline 
+                        link-underline-opacity-0 align-items-center" href="personalInformation" 
+                        style={{ width: "auto" }}>
                             <section className="d-flex flex-column">
                                 <span>
                                     Arthur

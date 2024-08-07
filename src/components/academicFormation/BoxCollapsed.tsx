@@ -23,7 +23,7 @@ export default function BoxCollapsed({ img_src, title, children, subtitle, href 
                     <button className="btn btn-success rounded-0 rounded-top" onClick={toggle}>
                         <i className="bi bi-x-lg"></i>
                     </button>
-                    <ModalBody className="bg-dark text-white d-flex gap-5 rounded-bottom">
+                    <ModalBody className="bg-black text-white d-flex gap-5 rounded-bottom">
                         <aside className="d-flex justify-content-center align-items-center w-25">
                             <CardImg title={title} description={subtitle}
                                 img_src={img_src} key={title + '-card'} href={href}

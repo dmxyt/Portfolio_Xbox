@@ -8,6 +8,7 @@ import PythonLogo from '../../../public/icons/python-4.svg';
 import SassLogo from '../../../public/icons/sass-1.svg';
 import BootstrapLogo from '../../../public/icons/bootstrap-5-1.svg';
 import { motion } from "framer-motion";
+
 function PersonalInfo() {
     return (
         <motion.div
@@ -16,7 +17,7 @@ function PersonalInfo() {
             exit={{ scale: 1.1, filter: "brightness(0.3)" }}
             transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
         >
-            <header className="bg-primary bg-gradient text-white p-3">
+            <header className="bg-primary  text-white p-3">
                 <Container className="d-flex align-items-center gap-2">
                     <a href="/home">
                         <i className="bi bi-arrow-left nav-link text-white"></i>
@@ -24,7 +25,9 @@ function PersonalInfo() {
                     <b className="h6 mb-0">Informações Pessoais</b>
                 </Container>
             </header>
-            <main className="bg-primary bg-gradient pb-5 pt-5 text-white d-flex flex-column vh-100 overflow-auto">
+            <main className="bg-primary bg-gradient pb-5 pt-5 text-white
+            justify-content-center 
+            d-flex flex-column vh-100 overflow-auto">
                 <Container fluid='md' className="d-flex wrap-competences-page justify-content-around align-items-center gap-5">
                     <section className="d-flex w-75 wrap-competences-page justify-content-center">
                         <div className="d-flex flex-column">
