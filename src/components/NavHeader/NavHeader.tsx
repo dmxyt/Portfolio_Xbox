@@ -8,7 +8,7 @@ type headerNavProps = {
 export default function ({ title, filter_section }: headerNavProps) {
     return (
         <>
-            <header className="w-100 bg-success container-fluid p-2">
+            <header className="w-100 bg-xbox container-fluid p-2">
                 <nav className='d-flex justify-content-between container'>
                     <section className="text-white small d-flex">
                         <a href="/home" className="nav-link d-flex justify-content-center align-items-center gap-2">
