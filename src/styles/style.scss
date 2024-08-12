@@ -1,5 +1,6 @@
 $bg-dark: #555454;
 $white-text: #F8F8FF;
+$bg-black: #000;
 $grayscale-opacity: #a0a0a01c;
 $green: #0E7A0D;
 $size: 260;
@@ -13,6 +14,7 @@ $size: 260;
 html,
 body {
     overflow: hidden;
+    background-color: $bg-black;
 }
 
 .defaultpadding {
@@ -34,6 +36,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    // 
+}
+
+.fullscreen-header {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
 }
 
 .white-text {
@@ -276,8 +286,7 @@ svg {
     height: 20vh !important;
 }
 
-@media (max-width: 791px) {
-
+@media (max-width: 1200px) {
     html,
     body {
         overflow: auto;
@@ -363,7 +372,6 @@ svg {
         margin: auto;
     }
 }
-
 @media (max-height: 463px) {
     .wrap-competences-page {
         flex-wrap: wrap;
@@ -371,7 +379,8 @@ svg {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
+    background-color: $bg-black;
 }
 
 ::-webkit-scrollbar-track {

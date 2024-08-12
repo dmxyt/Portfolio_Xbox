@@ -19,7 +19,7 @@ export default function () {
                     <div className="d-flex gap-3 defaultpadding
                         justify-content-center align-content-center flex-wrap">
                         <BoxCollapsed img_src={LeiteCorteLogo} title="Perfil Independente"
-                            href="#" subtitle="Administrador de Redes Sociais">
+                            href="https://www.instagram.com/leiteecortee/" subtitle="Administrador de Redes Sociais">
                             <b className="small">Agosto de 2020 ~ Novembro de 2020</b>
                             <ul>
                                 <li>Criação de conteúdo para redes sociais.</li>
@@ -29,7 +29,7 @@ export default function () {
                             </ul>
                         </BoxCollapsed>
                         <BoxCollapsed img_src={ChaveiroBaraoLogo} title="Chaveiro Barão"
-                            href="#" subtitle="Auxiliar Geral">
+                            href="https://chaveiro-web.vercel.app/" subtitle="Auxiliar Geral">
                             <b className="small">Dezembro de 2020 ~ Janeiro de 2024</b>
                             <ul>
                                 <li>Atendimento ao Cliente (Presencialmente e via redes sociais).</li>
@@ -47,7 +47,7 @@ export default function () {
                         </BoxCollapsed>
                         <BoxCollapsed img_src={SupremaLogo} title="SUPREMA"
                             subtitle="Professor de Robótica e Informática"
-                            href="#">
+                            href="https://www.instagram.com/suprema.educacional/">
                             <b className="small">Feveiro de 2024</b>
                             <ul>
                                 <li>Elaboração de conteúdo e dinâmicas para lecionar estudantes infantojuvenis.</li>

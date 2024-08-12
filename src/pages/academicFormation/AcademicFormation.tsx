@@ -19,7 +19,7 @@ export default function () {
                 <NavHeader title="Formações Acadêmicas" filter_section />
                 <main className="d-flex gap-3 defaultpadding justify-content-center align-content-center flex-wrap">
                     <BoxCollapsed img_src={SenacLogo} title={"Ensino Médio Técnico Integrado"}
-                        subtitle="Diploma do Ensino Médio" href="#">
+                        subtitle="Diploma do Ensino Médio" href="https://www.sp.senac.br/senac-ribeirao-preto">
                         <ul>
                             <li>Certificado de Assistente e Suporte de Manutenção de Computadores</li>
                             <li>Certificado de Assistente de Operação de Redes e Computadores</li>
@@ -27,7 +27,7 @@ export default function () {
                         </ul>
                     </BoxCollapsed>
                     <BoxCollapsed img_src={IFlogo} title="Análise e Desenvolvimento de Sistemas"
-                        subtitle="Graduação" href="#">
+                        subtitle="Graduação" href="http://gru.ifsp.edu.br/">
                         <ul>
                             <li>Desenvolvimento Web (Javascript, CSS e HTML)</li>
                             <li>Desenvolvimento com C</li>
@@ -36,7 +36,7 @@ export default function () {
                         </ul>
                     </BoxCollapsed>
                     <BoxCollapsed img_src={SenaiLogo} title="Power BI"
-                        subtitle="Curso Profissionalizante" href="#">
+                        subtitle="Curso Profissionalizante" href="https://sp.senai.br/unidade/ribeiraopreto/">
                         <ul>
                             <li>Criação de dashboards interativas e dinâmicas</li>
                             <li>Análise e Alteração de dados</li>
@@ -44,14 +44,14 @@ export default function () {
                         </ul>
                     </BoxCollapsed>
                     <BoxCollapsed img_src={MicrosoftLogo} title="Fundamentos do Azure"
-                        subtitle="Curso Profissionalizante" href="#">
+                        subtitle="Curso Profissionalizante" href="https://www.microsoft.com/pt-br">
                         <ul>
                             <li>SC-900: Microsoft Certified: Security, Compliance and Identity Fundamentals</li>
                             <li>AZ-900: Microsoft Certified: Azure Data Fundamentals</li>
                         </ul>
                     </BoxCollapsed>
                     <BoxCollapsed img_src={OneBitCodeLogo} title="Javascript, frameworks e ferramentas"
-                        subtitle="Curso Profissionalizante" href="#">
+                        subtitle="Curso Profissionalizante" href="https://onebitcode.com/javascript?utm_campaign=OBC-C+|+E0-UNC+|+CAR+|+SCH+|+T1S-BRD+|+CPA+|+BR+|+2022-11-10+|+FULL+STACK+|+Branding&utm_content=one%20bit%20code&utm_term=00+|+SCH+|+Keywords+|++Branding&&utm_medium=paid-traffic&utm_source=g&ltk_gcm=20978031545&ltk_gag=161130217591&ltk_gac=689155321426&ltk_gne=g&gad_source=1&gclid=CjwKCAjw_Na1BhAlEiwAM-dm7GUoE_ThMJRwovTrWBY1XKXeLyryD0BZ1wGSeNRPP7G8F60kaDV__RoC8I4QAvD_BwE">
                         <ul>
                             <li>Certificado JavaScript</li>
                             <li>Certificado HTML5</li>

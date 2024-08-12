@@ -10,6 +10,7 @@ import BootstrapLogo from '../../../public/icons/bootstrap-5-1.svg';
 import { motion } from "framer-motion";
 
 function PersonalInfo() {
+    const isMobile = window.innerWidth <= 1040;
     return (
         <motion.div
             initial={{ scale: 1.1, filter: "brightness(0)" }}
@@ -17,17 +18,17 @@ function PersonalInfo() {
             exit={{ scale: 1.1, filter: "brightness(0.3)" }}
             transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
         >
-            <header className="bg-primary  text-white p-3">
+            <header className="bg-primary text-white p-3">
                 <Container className="d-flex align-items-center gap-2">
-                    <a href="/home">
+                    <a href="home">
                         <i className="bi bi-arrow-left nav-link text-white"></i>
                     </a>
                     <b className="h6 mb-0">Informações Pessoais</b>
                 </Container>
             </header>
-            <main className="bg-primary bg-gradient pb-5 pt-5 text-white
-            justify-content-center 
-            d-flex flex-column vh-100 overflow-auto">
+            <main className={`bg-primary bg-gradient pb-5 pt-5 text-white
+            justify-content-center overflow-auto ${isMobile? '': 'vh-100'}
+            d-flex flex-column `}>
                 <Container fluid='md' className="d-flex wrap-competences-page justify-content-around align-items-center gap-5">
                     <section className="d-flex w-75 wrap-competences-page justify-content-center">
                         <div className="d-flex flex-column">
@@ -55,7 +56,7 @@ function PersonalInfo() {
                                     <div className="friends d-flex flex-column">
                                         <b>Amigos:</b>
                                         <span className="fs-3">
-                                            {"23"}
+                                            {"24"}
                                         </span>
                                     </div>
                                 </section>

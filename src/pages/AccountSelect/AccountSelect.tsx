@@ -1,7 +1,6 @@
 import { Container } from "reactstrap";
 import Profile_Arthur_Picture from '../../../public/AccountCircle.png'
 import UserSelection from "../../components/AccountSelection/UserSelection";
-import AnimationBg from '../../components/Animation/AnimationBg'
 import { motion } from 'framer-motion'
 function SelectAccount() {
 
@@ -12,7 +11,7 @@ function SelectAccount() {
                 animate={{filter:'brightness(1)' }}
                 exit={{ filter:'brightness(2)' }}
                 className="vh-100 bg-black text-white">
-                    <AnimationBg />
+                    {/* <AnimationBg /> */}
                 <Container
                     className="vh-100 d-flex justify-content-center 
                 align-items-center flex-column gap-5">
