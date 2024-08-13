@@ -14,12 +14,12 @@ interface project {
     languages?: string[]
 }
 
-const projects : project[] = [
+const projects: project[] = [
     {
         id: 1,
         img_src: ChaveiroCard,
         title: 'Chaveiro Barão',
-        description: "O Chaveiro Barão é uma empresa...",
+        description: "Website criado para a empresa Chaveiro Barão, possui elementos de Sass, Bootstrap, React e Typescript em sua configuração.",
         href: 'https://chaveiro-web.vercel.app/',
         languages: [
             'Typescript', 'React'
@@ -78,5 +78,5 @@ const projects : project[] = [
     }
 ];
 
-export {projects};
-export type {project};
+export { projects };
+export type { project };

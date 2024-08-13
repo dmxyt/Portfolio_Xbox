@@ -16,11 +16,11 @@ const Header = () => {
                 setIsMobileView(true);
             } else {
                 setIsMobileView(false);
-                setIsOpen(false); // fecha o menu se estiver em uma visualização maior
+                setIsOpen(false); 
             }
         };
 
-        handleResize(); // verifica o tamanho da tela quando o componente é montado
+        handleResize(); 
         window.addEventListener('resize', handleResize);
 
         return () => {

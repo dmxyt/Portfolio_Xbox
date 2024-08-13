@@ -30,7 +30,7 @@ function MyProjectsPage() {
                     <header className="text-white d-flex w-100 gap-3 
                     justify-content-center align-content-center px-5 pt-5">
                         <i className="bi bi-collection align-self-center "></i>
-                        <AccountSection href="/home" />
+                        <AccountSection href="home" />
                     </header>
                     <ul className="d-flex flex-column list-unstyled">
                         {btnFilterData.map((button) => (
@@ -70,7 +70,7 @@ function MyProjectsPage() {
                         </span>
                         <b className="border rounded p-2 ">Relevância</b>
                     </section>
-                    <div className="align-items-end d-flex flex-wrap gap-2">
+                    <div className="align-items-end d-flex flex-wrap gap-3">
                         {filteredProducts.map(project => (
                             <CardImg id={project.id} href={project.href}
                                 description={project.description} img_src={project.img_src}

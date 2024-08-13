@@ -33,10 +33,11 @@ body {
     min-height: 100vh;
     max-width: auto;
     background-image: url('../../public/wallpaperXbox.jpg');
+    // background-size: 200% 200%;
+    // animation: colorRotation 10s infinite ease-in-out;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    // 
 }
 
 .fullscreen-header {
@@ -96,11 +97,11 @@ body {
 .cardBox {
     transition: 0.3s;
     border: 0.3vh solid transparent;
-
     &:hover {
         box-shadow: 0 0 4vh $green;
         border: 0.3vh solid $green;
         scale: 1.1;
+        z-index: 2;
     }
 }
 
@@ -287,6 +288,7 @@ svg {
 }
 
 @media (max-width: 1200px) {
+
     html,
     body {
         overflow: auto;
@@ -372,6 +374,7 @@ svg {
         margin: auto;
     }
 }
+
 @media (max-height: 463px) {
     .wrap-competences-page {
         flex-wrap: wrap;
@@ -395,3 +398,5 @@ svg {
 ::-webkit-scrollbar-thumb:hover {
     background: $bg-dark;
 }
+
+//
