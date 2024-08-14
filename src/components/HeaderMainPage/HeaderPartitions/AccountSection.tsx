@@ -11,6 +11,7 @@ const AccountSection: React.FC<AccountSectionProps> = ({ showScore, smallSize, i
     return (
         <>
             <a className={`account d-flex gap-2 text-white link-offset-2 link-underline 
+            
             link-underline-opacity-0 ${smallSize ? 'w-25' : 'w-100'}`}
                 href={href ? href : 'personalInformation'} style={{ width: 'auto' }}>
                 {imgSize ? (

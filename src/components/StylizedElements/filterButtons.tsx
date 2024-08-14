@@ -7,10 +7,11 @@ type FilterBtnProps = {
     projects: project[],
     setFilteredProducts: React.Dispatch<React.SetStateAction<project[]>>,
     isActive: boolean,
+    all_title?: boolean,
     setActiveButton: React.Dispatch<React.SetStateAction<string | null>>
 }
 
-const FilterButtons: React.FC<FilterBtnProps> = ({ title, numberOfProjects, projects, setFilteredProducts, isActive, setActiveButton }) => {
+const FilterButtons: React.FC<FilterBtnProps> = ({ title, numberOfProjects,all_title, projects, setFilteredProducts, isActive, setActiveButton }) => {
     const filterProducts = (language: string | null) => {
         if (language === null || language === 'Todos os Projetos') {
             setFilteredProducts(projects);
@@ -28,7 +29,7 @@ const FilterButtons: React.FC<FilterBtnProps> = ({ title, numberOfProjects, proj
                 className={`w-100 d-flex justify-content-around text-white p-2
                 border-0 
                 ${isActive ? 'active-btn' : 'bg-transparent'}`}>
-                <span className="w-50 d-flex">
+                <span className={`${all_title? 'w-50': ''} d-flex`}>
                     {title}
                 </span>
                 <span className="hidden-numbers">

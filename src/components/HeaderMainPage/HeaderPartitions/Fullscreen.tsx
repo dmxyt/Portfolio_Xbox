@@ -9,16 +9,15 @@ type FullscreenHeaderProps = {
 
 export default function FullscreenHeader({ isOpen }: FullscreenHeaderProps) {
     const menuVariants = {
-        hidden: { opacity: 0, y: '-100%' },
-        visible: { opacity: 1, y: '0%' },
-        exit: { opacity: 0, y: '-100%' }
+        hidden: { opacity: 0,  },
+        visible: { opacity: 1, },
+        exit: { opacity: 0,  }
     };
 
     return (
         <AnimatePresence>
             {isOpen && (
                 <motion.div
-                    className=""
                     initial="hidden"
                     animate="visible"
                     exit="exit"

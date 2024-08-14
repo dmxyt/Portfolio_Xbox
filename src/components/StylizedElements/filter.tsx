@@ -1,16 +1,17 @@
 
 type FilterProps = {
-    filterText?: string
+    filterText?: string,
+    alignLeft?: boolean
 }
 
-export default function Filter({filterText}: FilterProps) {
+export default function Filter({filterText, alignLeft}: FilterProps) {
     return (
-        <section className="filter d-flex gap-2 align-content-center container pt-2 small">
+        <section className={`filter d-flex gap-2 align-content-center ${alignLeft? '': 'container'} pt-2 small flex-wrap`}>
             <span className="d-flex gap-1 p-1 small">
                 <i className="bi bi-funnel-fill "></i>
-                Filtro:
+                Filtrando por:
             </span>
-            <b className="border p-1 rounded small">{filterText? filterText : 'Do mais recente para o mais antigo'}</b>
+            <b className="border p-1 rounded small">{filterText? filterText : 'Relevância'}</b>
         </section>
     )
 }

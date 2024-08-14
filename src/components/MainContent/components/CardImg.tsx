@@ -2,11 +2,25 @@ import { project } from '../../../database/projects'
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion'
 interface CardImgProps extends project {
-    small_size: boolean
+    small_size: boolean,
+    allow_description?: boolean
 }
 
-export default function CardImg({ img_src, title, id, href, small_size, description }: CardImgProps) {
+export default function CardImg({ img_src, title, id, href, small_size, description, allow_description }: CardImgProps) {
     const [isHovered, setIsHovered] = useState(false);
+
+    if (!allow_description) {
+        return (
+            <>
+                <a className={`flex-column d-flex ${small_size ? 'small-size' : ''}`} key={id} href={href}
+                    target='_blank'>
+                    <img src={img_src} alt={title}
+                        className={`img-fluid rounded cardBox`} />
+                </a>
+            </>
+        )
+    }
+
     return (
         <>
             <a
@@ -21,10 +35,6 @@ export default function CardImg({ img_src, title, id, href, small_size, descript
                 <AnimatePresence>
                     <motion.div
                         style={{
-                            position: 'relative',
-                            display: 'block',
-                            width: '100%',
-                            height: 'auto',
                             transition: '0.3s',
                             transform: isHovered ? 'scale(1.1)' : 'scale(1)',
                         }}
@@ -34,35 +44,17 @@ export default function CardImg({ img_src, title, id, href, small_size, descript
                             alt={title}
                             className={`img-fluid rounded cardBox`}
                             style={{
-                                width: '100%',
-                                height: 'auto',
-                                border: '0.3vh solid transparent',
                                 transition: '0.3s',
                                 boxShadow: isHovered ? '0 0 4vh green' : 'none',
                             }}
                         />
                         {isHovered && (
                             <motion.div
-                                className="tooltip container"
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '100%',
-                                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                                    color: 'white',
-                                    borderRadius: '4px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    boxSizing: 'border-box',
-                                    zIndex: 0,
-                                }}
+                                className="tooltip container description-cardbox d-flex"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: 0.3 }}
+                                transition={{ duration: 0.4 }}
                             >
                                 {description}
                             </motion.div>
@@ -75,9 +67,5 @@ export default function CardImg({ img_src, title, id, href, small_size, descript
 }
 
 /* 
-<a className={`flex-column d-flex ${small_size ? 'small-size' : ''}`} key={id} href={href}
-                target='_blank'>
-                <img src={img_src} alt={title}
-                    className={`img-fluid rounded cardBox`} />
-            </a>
+
 */

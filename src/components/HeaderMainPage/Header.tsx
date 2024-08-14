@@ -38,7 +38,7 @@ const Header = () => {
             animate={{ scale: 1, filter: "brightness(1)" }}
             exit={{ scale: 2.5, filter: "brightness(0.3)" }}
             transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
-            className={` ${isOpen ? 'bg-black fullscreen-header' : 'p-5'}`}
+            className={`${isOpen ? 'bg-black fullscreen-header' : 'p-5'}`}
         >
             <Container fluid className={`white-text ${isOpen? 'bg-black pb-3': null}`}>
                 {isMobileView && (
@@ -49,7 +49,7 @@ const Header = () => {
                                 <b>Fechar Menu</b>
                             </div>
                         ) : (
-                            <div className='d-flex gap-3 text-white flex-wrap'>
+                            <div className='d-flex gap-3 text-white'>
                                 <i className="bi bi-dpad-fill"></i>
                                 <b>Abrir Menu</b>
                             </div>
