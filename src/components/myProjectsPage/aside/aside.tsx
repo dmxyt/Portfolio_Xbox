@@ -46,7 +46,8 @@ export default function ({ isBtnActive, projects_filtered, setFilter, setBtn }: 
     return (
         <>
             {isMobileView ? (
-                <header className="d-flex align-content-center bg-dark justify-content-center w-100 flex-column">
+                <header className="d-flex align-content-center w-100
+                bg-dark justify-content-center flex-column">
                     <button className='btn d-flex justify-content-center align-items-center' onClick={toggleMenu}>
                         {isOpen ? (
                             <div className='d-flex gap-3 text-white'>
@@ -76,7 +77,8 @@ export default function ({ isBtnActive, projects_filtered, setFilter, setBtn }: 
                                     </div>
                                 </div>
                                 <div className="w-100 px-3">
-                                    <ul className="d-flex flex-column list-unstyled bg-dark rounded">
+                                    <ul
+                                        className="d-flex flex-column list-unstyled bg-dark rounded">
                                         {projects_filtered.map((button) => (
                                             <FilterButtons
                                                 key={button.title}
@@ -113,7 +115,8 @@ export default function ({ isBtnActive, projects_filtered, setFilter, setBtn }: 
                 </header>
             ) : (
                 <aside className="w-25 border-end border-secondary border-3 vh-100 d-flex flex-column gap-5 bg-dark overflow-auto">
-                    <header className="text-white d-flex w-100 gap-3 justify-content-center align-content-center px-5 pt-5">
+                    <header className="text-white d-flex gap-3 px-5
+                    justify-content-center align-content-center  pt-5">
                         <i className="bi bi-collection align-self-center"></i>
                         <AccountSection href="home" />
                     </header>
@@ -131,7 +134,8 @@ export default function ({ isBtnActive, projects_filtered, setFilter, setBtn }: 
                             />
                         ))}
                     </ul>
-                    <footer className="footer mt-auto d-flex justify-content-between px-4 pb-3 flex-wrap">
+                    <footer className="footer mt-auto d-flex justify-content-between pb-2
+                    container flex-wrap">
                         <div>
                             <span className="d-flex gap-1 mt-4 align-items-end">
                                 Total de Projetos:

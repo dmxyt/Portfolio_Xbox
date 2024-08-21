@@ -61,7 +61,7 @@ export default function () {
                             <li>Certificado de Typescript</li>
                             <li>Certificado de SASS</li>
                             <li>Certificado de NextJS</li>
-                            <li>Certificado de Bootstrap</li>hddh
+                            <li>Certificado de Bootstrap</li>
                             <li>Certificado de Fundamentos do React</li>
                         </ul>
                     </BoxCollapsed>

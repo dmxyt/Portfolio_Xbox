@@ -1,17 +1,25 @@
-import ChaveiroCard from '../../public/ChaveiroCard.png'
-import LilyPinkCycleCard from '../../public/LilyPinkCycleCard.png'
-import SpotifyCard from '../../public/SpotifyCard.png'
-import LadingPageLogo from '../../public/currencyLogo.png'
-import ItauLogo from '../../public/logoItaú.png'
-import CalculatorLogo from '../../public/calculatorLogo.png'
+import ChaveiroCard from '../../public/ChaveiroCard.png';
+import LilyPinkCycleCard from '../../public/LilyPinkCycleCard.png';
+import SpotifyCard from '../../public/SpotifyCard.png';
+import LandingPageLogo from '../../public/currencyLogo.png';
+import ItauLogo from '../../public/logoItaú.png';
+import CalculatorLogo from '../../public/calculatorLogo.png';
+import TypescriptLogo from '../../public/icons/typescript.svg';
+import JavascriptLogo from '../../public/icons/logo-javascript.svg';
+import ReactLogo from '../../public/icons/react-2.svg';
+
+interface language {
+    title: string;
+    src: string;
+}
 
 interface project {
-    id: number,
-    img_src: string,
-    title: string,
-    description: string,
-    href: string,
-    languages?: string[]
+    id: number;
+    img_src: string;
+    title: string;
+    description: string;
+    href: string;
+    languages?: language[];
 }
 
 const projects: project[] = [
@@ -22,7 +30,14 @@ const projects: project[] = [
         description: "Website criado para a empresa Chaveiro Barão, possui elementos de Sass, Bootstrap, React e Typescript em sua configuração.",
         href: 'https://chaveiro-web.vercel.app/',
         languages: [
-            'Typescript', 'React'
+            {
+                title: 'Typescript',
+                src: TypescriptLogo
+            },
+            {
+                title: 'React',
+                src: ReactLogo
+            }
         ]
     },
     {
@@ -32,8 +47,14 @@ const projects: project[] = [
         description: "A Lily Pink Cycle é ...",
         href: 'https://lily-pink-cycle-app.vercel.app/',
         languages: [
-            'React',
-            'Javascript'
+            {
+                title: 'React',
+                src: ReactLogo
+            },
+            {
+                title: 'Javascript',
+                src: JavascriptLogo
+            }
         ]
     },
     {
@@ -43,17 +64,31 @@ const projects: project[] = [
         description: "A Spotify Web Simulation é ...",
         href: 'https://spotify-web-clone-ruddy.vercel.app/',
         languages: [
-            'Javascript', 'React'
+            {
+                title: 'Javascript',
+                src: JavascriptLogo
+            },
+            {
+                title: 'React',
+                src: ReactLogo
+            }
         ]
     },
     {
         id: 4,
-        img_src: LadingPageLogo,
-        title: 'Lading Page',
-        description: "Lading Page é ...",
+        img_src: LandingPageLogo,
+        title: 'Landing Page',
+        description: "Landing Page é ...",
         href: 'https://landing-page-five-alpha-73.vercel.app/',
         languages: [
-            'Typescript', 'React'
+            {
+                title: 'Typescript',
+                src: TypescriptLogo
+            },
+            {
+                title: 'React',
+                src: ReactLogo
+            }
         ]
     },
     {
@@ -63,20 +98,26 @@ const projects: project[] = [
         description: "Itaú Website é ...",
         href: 'https://itau-website.vercel.app/',
         languages: [
-            'Javascript'
+            {
+                title: 'Javascript',
+                src: JavascriptLogo
+            }
         ]
     },
     {
         id: 6,
         img_src: CalculatorLogo,
-        title: 'Area e Perímetro',
-        description: "Area e Perímetro Website é ...",
+        title: 'Área e Perímetro',
+        description: "Área e Perímetro Website é ...",
         href: '/',
         languages: [
-            'Javascript'
+            {
+                title: 'Javascript',
+                src: JavascriptLogo
+            }
         ]
     }
 ];
 
 export { projects };
-export type { project };
+export type { project, language };

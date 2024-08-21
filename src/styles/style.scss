@@ -47,6 +47,7 @@ body {
     height: 100%;
     z-index: 9999;
 }
+
 .white-text {
     color: $white-text;
 }
@@ -97,6 +98,7 @@ body {
 .cardBox {
     transition: 0.3s;
     border: 0.3vh solid transparent;
+
     &:hover {
         box-shadow: 0 0 4vh $green;
         border: 0.3vh solid $green;
@@ -105,11 +107,12 @@ body {
     }
 }
 
-.w-75-responsive{
+.w-75-responsive {
     width: 75%;
 }
-@media(max-width: 610px){
-    .w-75-responsive{
+
+@media(max-width: 610px) {
+    .w-75-responsive {
         width: 100%;
     }
 }
@@ -124,7 +127,7 @@ body {
     color: $white-text;
     border-radius: 4px;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     z-Index: 0;
 }
 
@@ -159,6 +162,13 @@ body {
     &:hover {
         box-shadow: 0 0 4vh $green;
         border: 0.3vh solid $green;
+    }
+}
+
+.animation-hover-bold {
+    transition: 0.4s;
+    &:hover {
+        box-shadow: $bg-dark;
     }
 }
 
