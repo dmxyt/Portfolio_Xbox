@@ -6,6 +6,7 @@ import PersonalInfo from '../../pages/personalInfo/PersonalInfo'
 import AcademicFormation from '../../pages/academicFormation/AcademicFormation'
 import ProfessionalExperiences from '../../pages/professionalExperiences/professional_experiences'
 import SelectAccount from '../../pages/AccountSelect/AccountSelect'
+import NotFound from '../../pages/NotFound/NotFound'
 import { AnimatePresence } from 'framer-motion'
 
 export default function AnimatedRoutes() {
@@ -21,6 +22,7 @@ export default function AnimatedRoutes() {
                     <Route path="academicformation" element={<AcademicFormation />} />
                     <Route path="professional_experiences" element={<ProfessionalExperiences />} />
                     <Route path="myProjects" element={<MyProjectsPage />} />
+                    <Route path=":slug" element={<NotFound/>} />
                 </Routes>
             </AnimatePresence>
         </>

@@ -16,7 +16,7 @@ function SelectAccount() {
                         className="vh-100 d-flex justify-content-center 
                 align-items-center flex-column gap-5">
                         <h3 className="text-center">
-                            Bem vindo ao Portifólio Xbox Dashboard <br />
+                            Bem vindo ao meu Portifólio Xbox <br />
                             Como quem deseja prosseguir?
                         </h3>
                         <section className="d-flex gap-5">

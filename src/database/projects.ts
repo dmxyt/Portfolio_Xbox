@@ -44,7 +44,7 @@ const projects: project[] = [
         id: 2,
         img_src: LilyPinkCycleCard,
         title: 'Lily Pink Cycle',
-        description: "A Lily Pink Cycle é ...",
+        description: "Plataforma para rastreamento de ciclos menstruais com React e JavaScript, tendo uma interface interativa e amigável.",
         href: 'https://lily-pink-cycle-app.vercel.app/',
         languages: [
             {
@@ -61,7 +61,7 @@ const projects: project[] = [
         id: 3,
         img_src: SpotifyCard,
         title: 'Spotify Web Simulation',
-        description: "A Spotify Web Simulation é ...",
+        description: "Simulação do design e funcionalidades do Spotify, desenvolvida com JavaScript e React, replicando a experiência do serviço de streaming.",
         href: 'https://spotify-web-clone-ruddy.vercel.app/',
         languages: [
             {
@@ -78,7 +78,7 @@ const projects: project[] = [
         id: 4,
         img_src: LandingPageLogo,
         title: 'Landing Page',
-        description: "Landing Page é ...",
+        description: "Landing page criada com TypeScript e React, projetada para demonstrar habilidades em design e funcionalidade de páginas de aterrissagem.",
         href: 'https://landing-page-five-alpha-73.vercel.app/',
         languages: [
             {
@@ -95,7 +95,7 @@ const projects: project[] = [
         id: 5,
         img_src: ItauLogo,
         title: 'Itaú Website',
-        description: "Itaú Website é ...",
+        description: "Um site que simula o visual e a funcionalidade do site oficial do Itaú, utilizando JavaScript para criar uma interface interativa e responsiva.",
         href: 'https://itau-website.vercel.app/',
         languages: [
             {
@@ -108,7 +108,7 @@ const projects: project[] = [
         id: 6,
         img_src: CalculatorLogo,
         title: 'Área e Perímetro',
-        description: "Área e Perímetro Website é ...",
+        description: "Site para cálculos de áreas e perímetros com JavaScript, oferecendo uma interface prática e precisa para usuários.",
         href: '/',
         languages: [
             {

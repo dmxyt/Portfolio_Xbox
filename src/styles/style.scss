@@ -79,7 +79,7 @@ body {
     flex-direction: column;
     transition: 0.3s;
     margin-bottom: 1rem;
-
+    cursor: pointer;
     &:hover {
         border: 0.3vh solid $green;
         box-shadow: 0 0 4vh $green;
@@ -87,8 +87,17 @@ body {
     }
 }
 
+.red-ring-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 1rem;
+    border: 5px solid;
+}
 .width-config {
     width: 3vh;
+}
+.font-404{
+    font-size: 25vh;
 }
 
 .card-width-responsive {
@@ -367,6 +376,17 @@ svg {
 @media (max-width: 578px) {
     .hidden-numbers {
         display: none;
+    }
+    .font-404{
+        font-size: 5vh;
+        margin: 0;
+        
+    }
+    .red-ring-circle{
+        width: 0px;
+        height: 0px;
+        margin: 0;
+        padding: 0;
     }
 }
 
