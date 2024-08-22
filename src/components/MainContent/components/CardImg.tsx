@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 interface CardImgProps extends project {
     small_size: boolean;
-    languages: { title: string; src: string }[];
+    languages?: { title: string; src: string }[];
     allow_description?: boolean;
 }
 
@@ -73,7 +73,7 @@ export default function CardImg({
                         >
                             {description}
                             <span className='fixed-bottom d-flex gap-1 px-2 pb-2'>
-                                {languages.map((language) => (
+                                {languages?.map((language) => (
                                     <img
                                         style={{width: '3vh'}}
                                         src={language.src}

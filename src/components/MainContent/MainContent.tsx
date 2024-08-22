@@ -42,7 +42,7 @@ export default function MainContent() {
                     <div className="d-flex gap-4 w-100 flex-wrap justify-content-items ">
                         <div className="d-flex gap-4 flex-wrap-timing">
                             <Box icon={'collection-fill'} description={'Projetos'} href="/myProjects" target={false} />
-                            <Box icon={'person-workspace'} description={"Carreira"} href="professional_experiences" target={false} />
+                            <Box icon={'person-workspace'} description={"Carreira"} href="/professional_experiences" target={false} />
                             <Box icon={"linkedin"} description={"LinkedIn"} href="https://www.linkedin.com/in/arthur-gonçalves-saldanha-375a70157" target={true} />
                             <Box icon={"file-earmark-richtext-fill"} description={'Currículo'} href="https://drive.google.com/file/d/1FYl3iC4gEwcw1MVYhEyIQW1m18sLAuml/view?usp=sharing" target={true} />
                         </div>

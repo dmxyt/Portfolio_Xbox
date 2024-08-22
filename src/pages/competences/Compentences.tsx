@@ -57,9 +57,9 @@ function HomePage() {
     return (
         <>
             <motion.div
-                initial={{ filter: "brightness(0)" }}
-                animate={{ filter: "brightness(1)" }}
-                exit={{ filter: "brightness(0.3)" }}
+                initial={{ scale: 1.1, filter: "brightness(0)" }}
+                animate={{ scale: 1, filter: "brightness(1)" }}
+                exit={{ scale: 1.1, filter: "brightness(0)" }}
                 transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
                 className="bg-black text-white vh-100 overflow-auto"
             >
@@ -76,8 +76,8 @@ function HomePage() {
                                 className="img-fluid responsive-image"
                                 initial={{ filter: "brightness(0)" }}
                                 animate={{ filter: "brightness(1)" }}
-                                exit={{ filter: "brightness(0.3)" }}
-                                transition={{ duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] }}
+                                exit={{ filter: "brightness(0)" }}
+                                transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}
                             />
                         </AnimatePresence>
                     </div>
@@ -98,8 +98,8 @@ function HomePage() {
                                     key={componentIndex}
                                     initial={{ filter: "brightness(0)", x: 50 }}
                                     animate={{ filter: "brightness(1)", x: 0 }}
-                                    exit={{ filter: "brightness(0.3)", x: -50 }}
-                                    transition={{ duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] }}
+                                    exit={{ filter: "brightness(0.1)", x: -50 }}
+                                    transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}
                                 >
                                     <SelectedComponent />
                                 </motion.div>

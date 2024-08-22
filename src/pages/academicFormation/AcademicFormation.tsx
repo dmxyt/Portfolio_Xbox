@@ -11,9 +11,9 @@ export default function () {
     return (
         <>
             <motion.div
-                initial={{ scale: 1.1, filter: "brightness(0)" }}
+                initial={{ scale: 1.5, filter: "brightness(0)" }}
                 animate={{ scale: 1, filter: "brightness(1)" }}
-                exit={{ scale: 1.1, filter: "brightness(0.3)" }}
+                exit={{ scale: 1.5, filter: "brightness(0)" }}
                 transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
                 className="wallpaperMyProjects bg-black text-white ">
                 <NavHeader title="Formações Acadêmicas" filter_section />

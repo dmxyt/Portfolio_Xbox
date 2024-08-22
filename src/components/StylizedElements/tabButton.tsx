@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 type tabButtonType = {
     href: string,
@@ -7,10 +8,10 @@ type tabButtonType = {
 const tabBtn = ({href, item_name} : tabButtonType) => {
     return(
         <>
-            <a href={href} className="tabSelector d-flex text-light" 
+            <Link to={href} className="tabSelector d-flex text-light" 
             data-toggle="tooltip" data-placement="bottom" title={href} target="">
                 <i className={`bi bi-${item_name}`}></i>
-            </a> 
+            </Link> 
         </>
     )
 }

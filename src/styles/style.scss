@@ -15,7 +15,6 @@ $size: 260;
 html,
 body {
     overflow: hidden;
-    // background-color: $bg-black;
 }
 
 .defaultpadding {
@@ -31,14 +30,25 @@ body {
 }
 
 .mainpageWallpaper {
+    position: relative;
     min-height: 100vh;
     max-width: auto;
-    background-image: url('../../public/wallpaperXbox.jpg');
-    // background-size: 200% 200%;
-    // animation: colorRotation 10s infinite ease-in-out;
+    background-image: url('../../public/wallpaperXboxOneX.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+/* Overlay */
+.mainpageWallpaper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black-opacity; 
+    z-index: -9;
 }
 
 .fullscreen-header {

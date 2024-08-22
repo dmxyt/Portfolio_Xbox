@@ -8,6 +8,7 @@ import PythonLogo from '../../../public/icons/python-4.svg';
 import SassLogo from '../../../public/icons/sass-1.svg';
 import BootstrapLogo from '../../../public/icons/bootstrap-5-1.svg';
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function PersonalInfo() {
     const isMobile = window.innerWidth <= 1040;
@@ -15,14 +16,14 @@ function PersonalInfo() {
         <motion.div
             initial={{ scale: 1.1, filter: "brightness(0)" }}
             animate={{ scale: 1, filter: "brightness(1)" }}
-            exit={{ scale: 1.1, filter: "brightness(0.3)" }}
+            exit={{ scale: 1.1, filter: "brightness(0)" }}
             transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
         >
             <header className="bg-primary text-white p-3">
                 <Container className="d-flex align-items-center gap-2">
-                    <a href="home">
+                    <Link to="/home">
                         <i className="bi bi-arrow-left nav-link text-white"></i>
-                    </a>
+                    </Link>
                     <b className="h6 mb-0">Informações Pessoais</b>
                 </Container>
             </header>

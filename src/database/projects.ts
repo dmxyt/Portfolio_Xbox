@@ -109,7 +109,7 @@ const projects: project[] = [
         img_src: CalculatorLogo,
         title: 'Área e Perímetro',
         description: "Site para cálculos de áreas e perímetros com JavaScript, oferecendo uma interface prática e precisa para usuários.",
-        href: '/',
+        href: 'https://github.com/arthurgs2006/calculadoraDeFigurasGeometricas',
         languages: [
             {
                 title: 'Javascript',

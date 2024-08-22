@@ -1,6 +1,7 @@
 import { Modal, ModalBody } from "reactstrap"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 type modalProps = {
     isOpen: boolean,
     toggle: () => void
@@ -34,17 +35,18 @@ export default function ({ isOpen, toggle }: modalProps) {
                     <i className="bi bi-phone-landscape-fill mb-4" style={{ fontSize: '2rem' }}></i>
                     <AnimatePresence mode="wait">
                         {showButton && (
-                            <motion.a
-                                initial={{ filter: 'brightness(0)' }}
-                                animate={{ filter: 'brightness(1)' }}
-                                exit={{ filter: 'brightness(2)' }}
-                                transition={{ duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] }}
-                                href="home"
-                                className="btn btn-success position-absolute bottom-0 end-0 m-3"
-                                onClick={toggle}
-                            >
-                                <b>Continuar</b>
-                            </motion.a>
+                            <Link to={'/home'}>
+                                <motion.div
+                                    initial={{ filter: 'brightness(0)' }}
+                                    animate={{ filter: 'brightness(1)' }}
+                                    exit={{ filter: 'brightness(0)' }}
+                                    transition={{ duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] }}
+                                    className="btn btn-success position-absolute bottom-0 end-0 m-3"
+                                    onClick={toggle}
+                                >
+                                    <b>Continuar</b>
+                                </motion.div>
+                            </Link>
                         )}
                     </AnimatePresence>
                 </ModalBody>

@@ -73,7 +73,7 @@ export default function ({ isBtnActive, projects_filtered, setFilter, setBtn }: 
                                 <div className="w-100 d-flex justify-content-center align-items-center text-center p-3">
                                     <div className="d-flex gap-2 align-items-center">
                                         <i className="bi bi-collection"></i>
-                                        <AccountSection href="home" />
+                                        <AccountSection />
                                     </div>
                                 </div>
                                 <div className="w-100 px-3">

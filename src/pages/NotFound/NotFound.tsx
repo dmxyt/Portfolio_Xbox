@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container } from "reactstrap";
 const NotFound = () => {
     return (
@@ -9,10 +10,10 @@ const NotFound = () => {
                     <div className="font-404">4</div>
                     <div className="rounded-circle d-flex justify-content-center animation-hover
                 align-items-center red-ring-circle border-danger">
-                        <a href="/" className="text-danger d-flex justify-content-center 
+                        <Link to="/" className="text-danger d-flex justify-content-center 
                     align-items-center rounded-circle">
                             <i className="bi bi-xbox h1 p-3"></i>
-                        </a>
+                        </Link>
                     </div>
                     <div className="font-404">4</div>
                 </section>
