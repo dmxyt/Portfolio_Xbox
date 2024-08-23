@@ -4,6 +4,7 @@ import { projects, project } from "../../../database/projects"
 import Graph from "../graph.tsx/graph"
 import { useEffect, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
+import { Link } from "react-router-dom"
 
 type asideProps = {
     projects_filtered: { title: string, numberOfProjects: number }[],
@@ -73,7 +74,7 @@ export default function ({ isBtnActive, projects_filtered, setFilter, setBtn }: 
                                 <div className="w-100 d-flex justify-content-center align-items-center text-center p-3">
                                     <div className="d-flex gap-2 align-items-center">
                                         <i className="bi bi-collection"></i>
-                                        <AccountSection />
+                                        <AccountSection href="/home"/>
                                     </div>
                                 </div>
                                 <div className="w-100 px-3">
@@ -101,7 +102,7 @@ export default function ({ isBtnActive, projects_filtered, setFilter, setBtn }: 
                                             </span>
                                             <span className="text-secondary d-flex gap-1 flex-wrap">
                                                 Produzido por
-                                                <a href="personalInformation" className="nav-link">@arthurGS</a>
+                                                <Link to="/personalInformation" className="nav-link">@arthurGS</Link>
                                             </span>
                                         </div>
                                         <div className="graph-container">
@@ -143,7 +144,7 @@ export default function ({ isBtnActive, projects_filtered, setFilter, setBtn }: 
                             </span>
                             <span className="text-secondary d-flex gap-1 flex-wrap">
                                 Produzido por
-                                <a href="personalInformation" className="nav-link">@arthurGS</a>
+                                <Link to="/personalInformation" className="nav-link">@arthurGS</Link>
                             </span>
                         </div>
                         <div className="graph-container">
