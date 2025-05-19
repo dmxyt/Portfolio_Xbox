@@ -83,7 +83,7 @@ function PersonalInfo() {
                     <section className="d-flex flex-column infoCardBox pb-5">
                         <InfoCard titleElement="Nome Completo:" subtitleElement="Arthur Gonçalves Saldanha" />
                         <InfoCard titleElement="Endereço:" subtitleElement="São Paulo, SP (Brasil)" />
-                        <InfoCard titleElement="Idade:" subtitleElement="18 anos" />
+                        <InfoCard titleElement="Idade:" subtitleElement="19 anos" />
                         <InfoCard titleElement="Nacionalidade:" subtitleElement="Brasileiro" />
                         <InfoCard titleElement="Profissão:" subtitleElement="Desenvolvedor" />
                     </section>

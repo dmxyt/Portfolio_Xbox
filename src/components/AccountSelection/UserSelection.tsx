@@ -14,7 +14,6 @@ export default function ({ img_src }: UserSelection) {
         <>
             <a className="d-flex flex-column text-decoration-none
                         justify-content-center gap-5" onClick={toggle}
-                        // href="home"
                         >
                 <img src={img_src}
                     className="img-fluid profile-section"

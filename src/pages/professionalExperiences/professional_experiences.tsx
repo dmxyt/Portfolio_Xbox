@@ -2,6 +2,7 @@ import { Container } from "reactstrap"
 import BoxCollapsed from "../../components/academicFormation/BoxCollapsed"
 import SupremaLogo from '../../../public/supremalogo.jpeg'
 import LeiteCorteLogo from '../../../public/Leite&CorteLogo.png'
+import ItauLogo from '../../../public/logoItaú.png'
 import ChaveiroBaraoLogo from '../../../public/ChaveiroCard.png'
 import NavHeader from "../../components/NavHeader/NavHeader"
 import {motion} from 'framer-motion'
@@ -52,6 +53,16 @@ export default function () {
                             <ul>
                                 <li>Elaboração de conteúdo e dinâmicas para lecionar estudantes infantojuvenis.</li>
                                 <li>Organização de ferramentas a serem utilizadas durante as aulas.</li>
+                            </ul>
+                        </BoxCollapsed>
+                        <BoxCollapsed img_src={ItauLogo} title="Itaú Unibanco"
+                            subtitle="Analista de Dados e Desenvolvedor de Software"
+                            href="https://www.itau.com.br/">
+                            <b className="small">Outubro de 2024 - Atualmente</b>
+                            <ul>
+                                <li>Atuação em frentes de Segurança;</li>
+                                <li>Visão corporativa e trabalho em equipe;</li>
+                                <li>AWS - Python - SQL - Office</li>
                             </ul>
                         </BoxCollapsed>
                     </div>
