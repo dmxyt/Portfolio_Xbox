@@ -66,7 +66,7 @@ function PersonalInfo() {
                                         Iniciante na carreira de desenvolvedor, tenho experiências de diversos cursos sobre a área de desenvolvimento e programação, com destaque em JavaScript e noções gerais em outras linguagens. Realizo alguns trabalhos com a plataforma Adobe, focando em edição de vídeo e produção de conteúdo.
                                     </h6>
                                 </section>
-                                <section className="flex-wrap d-flex gap-3">
+                                <section className="flex-wrap d-flex gap-3 ">
                                     <img src={JavascriptLogo} className="img-fluid icon-size" alt="Icone de Javascript" />
                                     <img src={TypescriptLogo} className="img-fluid icon-size" alt="Icone de Typescript" />
                                     <img src={ReactLogo} className="img-fluid icon-size" alt="Icone de React" />
