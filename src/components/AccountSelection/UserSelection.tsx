@@ -19,7 +19,7 @@ export default function ({ img_src }: UserSelection) {
                     className="img-fluid profile-section"
                     alt="Profile Picture" />
                 <b className="d-flex justify-content-center text-white ">
-                    Arthur GS
+                    xXAlexarion
                 </b>
             </a>
             <Modal isOpen={isOpen} toggle={toggle} />
